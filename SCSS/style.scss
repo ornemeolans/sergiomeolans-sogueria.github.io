@@ -1,0 +1,30 @@
+@import "VARIABLES/variables";
+@import "SASS/extend";
+@import "SASS/mixins";
+@import "PARTIALS/footer";
+@import "PARTIALS/header";
+@import "PARTIALS/body";
+@import "PARTIALS/section";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    flex-direction: row-reverse;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color: #ffffff;
+}
+span{
+    color:#ffffff;
+}
+.navbar-light .navbar-toggler{
+    border: none;
+}
+
+navbar-nav {
+    font-family: 'Rubik', sans-serif;
+}

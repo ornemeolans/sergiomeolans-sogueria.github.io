@@ -1,0 +1,104 @@
+@import "../VARIABLES/variables";
+
+.banner{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .call-to-action{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    p{
+        font-size: $p-size-desktop;
+        margin-top: 16px;
+    }
+    h2{
+        font-size: $h2-size-desktop;
+        margin-top: 8px;
+    }
+    a{
+        font-size: $a-size-desktop;
+        text-decoration: none;
+        color: $font-color;
+        margin: 4px 0px;
+    }
+}
+
+.multimedia{
+    margin: 15px 0px;
+    h2{
+        display: flex;
+        justify-content: center;
+        font-size: $h2-size-desktop;
+        margin: 10px 0px;
+    }
+    .video{
+        display: flex;
+        justify-content: space-around;
+        iframe{
+            width: 50%;
+        }
+    }
+}
+
+.pages-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        margin: 15px 0px;
+        font-size: $h1-size-desktop;
+        font-style: bold;
+    }
+    p{
+        margin: 5px 0px;
+        font-size: $p-size-desktop;
+    }
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    .form{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    .contact-date{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        a{
+            display: flex;
+            flex-direction: row;
+            font-size: $a-size-desktop;
+            text-decoration: none;
+            color: black;
+            margin-top: 25px;
+            margin-left: 20px;
+            img{
+                display: flex;
+                flex-direction: row;
+                height: 30px;
+            }
+        }
+        iframe{
+            width: 400px;
+            height: 200px;
+            margin-top: 25px;
+            margin-left: 20px;
+        }
+    }
+}
+
+.img-historia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    img{
+        width: 50%;
+    }
+}

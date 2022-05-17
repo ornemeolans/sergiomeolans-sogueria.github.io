@@ -1,0 +1,12 @@
+@import "../VARIABLES/variables";
+// @import "../SASS/extend";
+// @import "../SASS/mixins";
+
+header{
+    background-color: $color-header-background;
+    display: flex;
+    
+    img{
+        width: 50px;
+    }
+}

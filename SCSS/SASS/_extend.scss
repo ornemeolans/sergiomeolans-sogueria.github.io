@@ -1,0 +1,8 @@
+@import "../VARIABLES/variables";
+
+.header{
+    background-color: $color-header-background;
+    width: 100%;
+    font-family: $font;
+    font-size: $a-size-desktop;
+}

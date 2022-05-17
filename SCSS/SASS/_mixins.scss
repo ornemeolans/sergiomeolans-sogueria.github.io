@@ -1,0 +1,16 @@
+@import "../VARIABLES/variables";
+
+@mixin flexibility {
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin fonts {
+    font-family: $font;
+    font-style: italic;
+}
+
+@mixin style-of-anchors {
+    text-decoration: none;
+    font-family: $font;
+}
