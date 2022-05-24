@@ -28,17 +28,57 @@
 
 .multimedia{
     margin: 15px 0px;
-    h2{
-        display: flex;
-        justify-content: center;
-        font-size: $h2-size-desktop;
-        margin: 10px 0px;
+    @media screen and (min-width:1024px){
+        h2{
+            display: flex;
+            justify-content: center;
+            font-size: $h2-size-desktop;
+            margin: 10px 0px;
+        }
+        .video{
+            display: flex;
+            justify-content: space-around;
+            iframe{
+                width: 50%;
+                margin: 0px 20px;
+            }
+        }
     }
-    .video{
-        display: flex;
-        justify-content: space-around;
-        iframe{
-            width: 50%;
+    @media screen and (min-width:768px) and (max-width:1023px){
+        h2{
+            display: flex;
+            justify-content: center;
+            font-size: $h2-size-mobile;
+            margin: 5px 0px;
+        }
+        .video{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            iframe{
+                width: 30%;
+                height: 45%;
+            }
+        }
+    }
+    @media screen and (max-width:767px) {
+        h2{
+            display: flex;
+            justify-content: center;
+            font-size: $h2-size-mobile;
+            margin: 3px 0px;
+        }
+        .video{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            iframe{
+                width: 50%;
+                height: 50%;
+                margin: 15px 0px;
+            }
         }
     }
 }
@@ -59,46 +99,151 @@
 }
 
 .contact{
-    display: flex;
-    flex-direction: row;
-    .form{
+    @media screen and (min-width:1024px){
         display: flex;
-        flex-direction: column;
-        width: 50%;
-    }
-    .contact-date{
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        a{
+        flex-direction: row;
+        justify-content: space-between;
+        .form{
             display: flex;
-            flex-direction: row;
-            font-size: $a-size-desktop;
-            text-decoration: none;
-            color: black;
-            margin-top: 25px;
-            margin-left: 20px;
-            img{
+            flex-direction: column;
+            width: 50%;
+        }
+        .contact-date{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            a{
                 display: flex;
                 flex-direction: row;
-                height: 30px;
+                font-size: $a-size-desktop;
+                text-decoration: none;
+                color: black;
+                margin-top: 25px;
+                margin-left: 20px;
+                img{
+                    display: flex;
+                    flex-direction: row;
+                    height: 30px;
+                }
+            }
+            iframe{
+                width: 400px;
+                height: 200px;
+                margin-top: 25px;
+                margin-left: 20px;
             }
         }
-        iframe{
-            width: 400px;
-            height: 200px;
-            margin-top: 25px;
-            margin-left: 20px;
+    }
+    @media screen and (min-width:768px) and (max-width:1023px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .form{
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            .mb-3{
+                label{
+                    font-size: $a-size-mobile;
+                }
+                input{
+                    font-weight: 200px;
+                }
+            }
+        }
+        .contact-date{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            a{
+                display: flex;
+                flex-direction: row;
+                font-size: $a-size-desktop;
+                text-decoration: none;
+                color: black;
+                margin-top: 25px;
+                margin-left: 20px;
+                img{
+                    display: flex;
+                    flex-direction: row;
+                    height: 20px;
+                }
+            }
+            iframe{
+                width: 300px;
+                height: 100px;
+                margin-top: 15px;
+                margin-left: 10px;
+            }
+        }
+    }
+    @media screen and (max-width:767px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .form{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+        }
+        .contact-date{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            width: 90%;
+            a{
+                display: flex;
+                flex-direction: row;
+                font-size: $a-size-desktop;
+                text-decoration: none;
+                color: black;
+                margin-top: 25px;
+                img{
+                    display: flex;
+                    flex-direction: row;
+                    height: 30px;
+                }
+            }
+            iframe{
+                width: 400px;
+                height: 200px;
+                margin-top: 25px;
+            }
         }
     }
 }
 
 .img-historia{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    img{
-        width: 50%;
+    @media screen and (min-width:1024px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        img{
+            width: 50%;
+            margin: 0px 20px;
+        }
+    }
+    @media screen and (min-width:768px) and (max-width:1023px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        img{
+            width: 40%;
+            margin: 0px 10px;
+        }
+    }
+    @media screen and (max-width:767px){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        img{
+            width: 50%;
+            margin-top: 10px;
+        }
     }
 }

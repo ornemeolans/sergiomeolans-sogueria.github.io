@@ -7,6 +7,9 @@
 footer {
   display: flex;
   justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   height: 35px;
   background-color: #e8e7e6; }
   footer img {
@@ -19,7 +22,10 @@ header {
     width: 50px; }
 
 body {
-  background-color: #ffe6ab; }
+  background-color: #ffe6ab;
+  position: relative;
+  padding-bottom: 45px;
+  min-height: 100vh; }
 
 .banner {
   height: 300px;
@@ -44,16 +50,47 @@ body {
 
 .multimedia {
   margin: 15px 0px; }
-  .multimedia h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    margin: 10px 0px; }
-  .multimedia .video {
-    display: flex;
-    justify-content: space-around; }
-    .multimedia .video iframe {
-      width: 50%; }
+  @media screen and (min-width: 1024px) {
+    .multimedia h2 {
+      display: flex;
+      justify-content: center;
+      font-size: 30px;
+      margin: 10px 0px; }
+    .multimedia .video {
+      display: flex;
+      justify-content: space-around; }
+      .multimedia .video iframe {
+        width: 50%;
+        margin: 0px 20px; } }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .multimedia h2 {
+      display: flex;
+      justify-content: center;
+      font-size: 15px;
+      margin: 5px 0px; }
+    .multimedia .video {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around; }
+      .multimedia .video iframe {
+        width: 30%;
+        height: 45%; } }
+  @media screen and (max-width: 767px) {
+    .multimedia h2 {
+      display: flex;
+      justify-content: center;
+      font-size: 15px;
+      margin: 3px 0px; }
+    .multimedia .video {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .multimedia .video iframe {
+        width: 50%;
+        height: 50%;
+        margin: 15px 0px; } }
 
 .pages-banner {
   display: flex;
@@ -67,42 +104,133 @@ body {
     margin: 5px 0px;
     font-size: 16px; }
 
-.contact {
-  display: flex;
-  flex-direction: row; }
-  .contact .form {
+@media screen and (min-width: 1024px) {
+  .contact {
     display: flex;
-    flex-direction: column;
-    width: 50%; }
-  .contact .contact-date {
-    display: flex;
-    flex-direction: column;
-    width: 50%; }
-    .contact .contact-date a {
+    flex-direction: row;
+    justify-content: space-between; }
+    .contact .form {
       display: flex;
-      flex-direction: row;
-      font-size: 20px;
-      text-decoration: none;
-      color: black;
-      margin-top: 25px;
-      margin-left: 20px; }
-      .contact .contact-date a img {
+      flex-direction: column;
+      width: 50%; }
+    .contact .contact-date {
+      display: flex;
+      flex-direction: column;
+      width: 50%; }
+      .contact .contact-date a {
         display: flex;
         flex-direction: row;
-        height: 30px; }
-    .contact .contact-date iframe {
-      width: 400px;
-      height: 200px;
-      margin-top: 25px;
-      margin-left: 20px; }
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+        margin-top: 25px;
+        margin-left: 20px; }
+        .contact .contact-date a img {
+          display: flex;
+          flex-direction: row;
+          height: 30px; }
+      .contact .contact-date iframe {
+        width: 400px;
+        height: 200px;
+        margin-top: 25px;
+        margin-left: 20px; } }
 
-.img-historia {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center; }
-  .img-historia img {
-    width: 50%; }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .contact .form {
+      display: flex;
+      flex-direction: column;
+      width: 40%; }
+      .contact .form .mb-3 label {
+        font-size: 10px; }
+      .contact .form .mb-3 input {
+        font-weight: 200px; }
+    .contact .contact-date {
+      display: flex;
+      flex-direction: column;
+      width: 50%; }
+      .contact .contact-date a {
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+        margin-top: 25px;
+        margin-left: 20px; }
+        .contact .contact-date a img {
+          display: flex;
+          flex-direction: row;
+          height: 20px; }
+      .contact .contact-date iframe {
+        width: 300px;
+        height: 100px;
+        margin-top: 15px;
+        margin-left: 10px; } }
+
+@media screen and (max-width: 767px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contact .form {
+      display: flex;
+      flex-direction: column;
+      width: 90%; }
+    .contact .contact-date {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      width: 90%; }
+      .contact .contact-date a {
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+        margin-top: 25px; }
+        .contact .contact-date a img {
+          display: flex;
+          flex-direction: row;
+          height: 30px; }
+      .contact .contact-date iframe {
+        width: 400px;
+        height: 200px;
+        margin-top: 25px; } }
+
+@media screen and (min-width: 1024px) {
+  .img-historia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    .img-historia img {
+      width: 50%;
+      margin: 0px 20px; } }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .img-historia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    .img-historia img {
+      width: 40%;
+      margin: 0px 10px; } }
+
+@media screen and (max-width: 767px) {
+  .img-historia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    .img-historia img {
+      width: 50%;
+      margin-top: 10px; } }
 
 * {
   margin: 0;
