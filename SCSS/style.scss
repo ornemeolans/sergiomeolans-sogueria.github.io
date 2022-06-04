@@ -22,7 +22,16 @@ span{
     color:#ffffff;
 }
 .navbar-light .navbar-toggler{
-    border: none;
+    color: #ffffff;
+    border: inset;
+}
+
+.navbar-nav{
+    align-items: flex-end;
+}
+
+.fondo{
+    width: 100%;
 }
 
 navbar-nav {
