@@ -302,496 +302,508 @@ body {
   margin: 20px; }
 
 .card-1 {
-  position: relative;
-  width: 200px;
-  height: 300px;
   margin: 20px;
   display: flex;
   justify-content: center; }
-  .card-1 .face-1 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: .5s; }
-  .card-1 .front-1 {
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px #000000; }
-    .card-1 .front-1 img {
+  .card-1 .cardsub-1 {
+    position: relative;
+    width: 200px;
+    height: 300px; }
+    .card-1 .cardsub-1 .face-1 {
       position: absolute;
       width: 100%;
       height: 100%;
-      object-fit: cover; }
-  .card-1 .back-1 {
-    transform: perspective(600px) rotateY(180deg);
-    background: #584b13;
-    padding: 15px;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0 5px 10px #000000; }
-    .card-1 .back-1 h4 {
-      font-size: 20px;
-      margin-top: 5px; }
-  .card-1:hover .front-1 {
-    transform: perspective(600px) rotateY(180deg); }
-  .card-1:hover .back-1 {
-    transform: perspective(600px) rotateY(360deg); }
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: .5s; }
+    .card-1 .cardsub-1 .front-1 {
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px 10px #000000; }
+      .card-1 .cardsub-1 .front-1 img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .card-1 .cardsub-1 .back-1 {
+      transform: perspective(600px) rotateY(180deg);
+      background: #584b13;
+      padding: 15px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 5px 10px #000000; }
+      .card-1 .cardsub-1 .back-1 h4 {
+        font-size: 20px;
+        margin-top: 5px; }
+    .card-1 .cardsub-1:hover .front-1 {
+      transform: perspective(600px) rotateY(180deg); }
+    .card-1 .cardsub-1:hover .back-1 {
+      transform: perspective(600px) rotateY(360deg); }
 
 .card-2 {
-  position: relative;
-  width: 200px;
-  height: 300px;
   margin: 20px;
   display: flex;
   justify-content: center; }
-  .card-2 .face-2 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: .5s; }
-  .card-2 .front-2 {
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px #000000; }
-    .card-2 .front-2 img {
+  .card-2 .cardsub-2 {
+    position: relative;
+    width: 200px;
+    height: 300px; }
+    .card-2 .cardsub-2 .face-2 {
       position: absolute;
       width: 100%;
       height: 100%;
-      object-fit: cover; }
-  .card-2 .back-2 {
-    transform: perspective(600px) rotateY(180deg);
-    background: #584b13;
-    padding: 15px;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0 5px 10px #000000; }
-    .card-2 .back-2 h4 {
-      font-size: 20px;
-      margin-top: 5px; }
-  .card-2:hover .front-2 {
-    transform: perspective(600px) rotateY(180deg); }
-  .card-2:hover .back-2 {
-    transform: perspective(600px) rotateY(360deg); }
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: .5s; }
+    .card-2 .cardsub-2 .front-2 {
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px 10px #000000; }
+      .card-2 .cardsub-2 .front-2 img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .card-2 .cardsub-2 .back-2 {
+      transform: perspective(600px) rotateY(180deg);
+      background: #584b13;
+      padding: 15px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 5px 10px #000000; }
+      .card-2 .cardsub-2 .back-2 h4 {
+        font-size: 20px;
+        margin-top: 5px; }
+    .card-2 .cardsub-2:hover .front-2 {
+      transform: perspective(600px) rotateY(180deg); }
+    .card-2 .cardsub-2:hover .back-2 {
+      transform: perspective(600px) rotateY(360deg); }
 
 .card-3 {
-  position: relative;
-  width: 200px;
-  height: 300px;
   margin: 20px;
   display: flex;
   justify-content: center; }
-  .card-3 .face-3 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: .5s; }
-  .card-3 .front-3 {
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px #000000; }
-    .card-3 .front-3 img {
+  .card-3 .cardsub-3 {
+    position: relative;
+    width: 200px;
+    height: 300px; }
+    .card-3 .cardsub-3 .face-3 {
       position: absolute;
       width: 100%;
       height: 100%;
-      object-fit: cover; }
-  .card-3 .back-3 {
-    transform: perspective(600px) rotateY(180deg);
-    background: #584b13;
-    padding: 15px;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0 5px 10px #000000; }
-    .card-3 .back-3 h4 {
-      font-size: 20px;
-      margin-top: 5px; }
-  .card-3:hover .front-3 {
-    transform: perspective(600px) rotateY(180deg); }
-  .card-3:hover .back-3 {
-    transform: perspective(600px) rotateY(360deg); }
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: .5s; }
+    .card-3 .cardsub-3 .front-3 {
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px 10px #000000; }
+      .card-3 .cardsub-3 .front-3 img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .card-3 .cardsub-3 .back-3 {
+      transform: perspective(600px) rotateY(180deg);
+      background: #584b13;
+      padding: 15px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 5px 10px #000000; }
+      .card-3 .cardsub-3 .back-3 h4 {
+        font-size: 20px;
+        margin-top: 5px; }
+    .card-3 .cardsub-3:hover .front-3 {
+      transform: perspective(600px) rotateY(180deg); }
+    .card-3 .cardsub-3:hover .back-3 {
+      transform: perspective(600px) rotateY(360deg); }
 
 .card-4 {
-  position: relative;
-  width: 200px;
-  height: 300px;
   margin: 20px;
   display: flex;
   justify-content: center; }
-  .card-4 .face-4 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: .5s; }
-  .card-4 .front-4 {
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px #000000; }
-    .card-4 .front-4 img {
+  .card-4 .cardsub-4 {
+    position: relative;
+    width: 200px;
+    height: 300px; }
+    .card-4 .cardsub-4 .face-4 {
       position: absolute;
       width: 100%;
       height: 100%;
-      object-fit: cover; }
-  .card-4 .back-4 {
-    transform: perspective(600px) rotateY(180deg);
-    background: #584b13;
-    padding: 15px;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0 5px 10px #000000; }
-    .card-4 .back-4 h4 {
-      font-size: 20px;
-      margin-top: 5px; }
-  .card-4:hover .front-4 {
-    transform: perspective(600px) rotateY(180deg); }
-  .card-4:hover .back-4 {
-    transform: perspective(600px) rotateY(360deg); }
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: .5s; }
+    .card-4 .cardsub-4 .front-4 {
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px 10px #000000; }
+      .card-4 .cardsub-4 .front-4 img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .card-4 .cardsub-4 .back-4 {
+      transform: perspective(600px) rotateY(180deg);
+      background: #584b13;
+      padding: 15px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 5px 10px #000000; }
+      .card-4 .cardsub-4 .back-4 h4 {
+        font-size: 20px;
+        margin-top: 5px; }
+    .card-4 .cardsub-4:hover .front-4 {
+      transform: perspective(600px) rotateY(180deg); }
+    .card-4 .cardsub-4:hover .back-4 {
+      transform: perspective(600px) rotateY(360deg); }
 
 .card-5 {
-  position: relative;
-  width: 200px;
-  height: 300px;
   margin: 20px;
   display: flex;
   justify-content: center; }
-  .card-5 .face-5 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: .5s; }
-  .card-5 .front-5 {
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px #000000; }
-    .card-5 .front-5 img {
+  .card-5 .cardsub-5 {
+    position: relative;
+    width: 200px;
+    height: 300px; }
+    .card-5 .cardsub-5 .face-5 {
       position: absolute;
       width: 100%;
       height: 100%;
-      object-fit: cover; }
-  .card-5 .back-5 {
-    transform: perspective(600px) rotateY(180deg);
-    background: #584b13;
-    padding: 15px;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0 5px 10px #000000; }
-    .card-5 .back-5 h4 {
-      font-size: 20px;
-      margin-top: 5px; }
-  .card-5:hover .front-5 {
-    transform: perspective(600px) rotateY(180deg); }
-  .card-5:hover .back-5 {
-    transform: perspective(600px) rotateY(360deg); }
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: .5s; }
+    .card-5 .cardsub-5 .front-5 {
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px 10px #000000; }
+      .card-5 .cardsub-5 .front-5 img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .card-5 .cardsub-5 .back-5 {
+      transform: perspective(600px) rotateY(180deg);
+      background: #584b13;
+      padding: 15px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 5px 10px #000000; }
+      .card-5 .cardsub-5 .back-5 h4 {
+        font-size: 20px;
+        margin-top: 5px; }
+    .card-5 .cardsub-5:hover .front-5 {
+      transform: perspective(600px) rotateY(180deg); }
+    .card-5 .cardsub-5:hover .back-5 {
+      transform: perspective(600px) rotateY(360deg); }
 
 .card-6 {
-  position: relative;
-  width: 200px;
-  height: 300px;
   margin: 20px;
   display: flex;
   justify-content: center; }
-  .card-6 .face-6 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: .5s; }
-  .card-6 .front-6 {
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px #000000; }
-    .card-6 .front-6 img {
+  .card-6 .cardsub-6 {
+    position: relative;
+    width: 200px;
+    height: 300px; }
+    .card-6 .cardsub-6 .face-6 {
       position: absolute;
       width: 100%;
       height: 100%;
-      object-fit: cover; }
-  .card-6 .back-6 {
-    transform: perspective(600px) rotateY(180deg);
-    background: #584b13;
-    padding: 15px;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0 5px 10px #000000; }
-    .card-6 .back-6 h4 {
-      font-size: 20px;
-      margin-top: 5px; }
-  .card-6:hover .front-6 {
-    transform: perspective(600px) rotateY(180deg); }
-  .card-6:hover .back-6 {
-    transform: perspective(600px) rotateY(360deg); }
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: .5s; }
+    .card-6 .cardsub-6 .front-6 {
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px 10px #000000; }
+      .card-6 .cardsub-6 .front-6 img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .card-6 .cardsub-6 .back-6 {
+      transform: perspective(600px) rotateY(180deg);
+      background: #584b13;
+      padding: 15px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 5px 10px #000000; }
+      .card-6 .cardsub-6 .back-6 h4 {
+        font-size: 20px;
+        margin-top: 5px; }
+    .card-6 .cardsub-6:hover .front-6 {
+      transform: perspective(600px) rotateY(180deg); }
+    .card-6 .cardsub-6:hover .back-6 {
+      transform: perspective(600px) rotateY(360deg); }
 
 .card-7 {
-  position: relative;
-  width: 200px;
-  height: 300px;
   margin: 20px;
   display: flex;
   justify-content: center; }
-  .card-7 .face-7 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: .5s; }
-  .card-7 .front-7 {
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px #000000; }
-    .card-7 .front-7 img {
+  .card-7 .cardsub-7 {
+    position: relative;
+    width: 200px;
+    height: 300px; }
+    .card-7 .cardsub-7 .face-7 {
       position: absolute;
       width: 100%;
       height: 100%;
-      object-fit: cover; }
-  .card-7 .back-7 {
-    transform: perspective(600px) rotateY(180deg);
-    background: #584b13;
-    padding: 15px;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0 5px 10px #000000; }
-    .card-7 .back-7 h4 {
-      font-size: 20px;
-      margin-top: 5px; }
-  .card-7:hover .front-7 {
-    transform: perspective(600px) rotateY(180deg); }
-  .card-7:hover .back-7 {
-    transform: perspective(600px) rotateY(360deg); }
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: .5s; }
+    .card-7 .cardsub-7 .front-7 {
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px 10px #000000; }
+      .card-7 .cardsub-7 .front-7 img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .card-7 .cardsub-7 .back-7 {
+      transform: perspective(600px) rotateY(180deg);
+      background: #584b13;
+      padding: 15px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 5px 10px #000000; }
+      .card-7 .cardsub-7 .back-7 h4 {
+        font-size: 20px;
+        margin-top: 5px; }
+    .card-7 .cardsub-7:hover .front-7 {
+      transform: perspective(600px) rotateY(180deg); }
+    .card-7 .cardsub-7:hover .back-7 {
+      transform: perspective(600px) rotateY(360deg); }
 
 .card-8 {
-  position: relative;
-  width: 200px;
-  height: 300px;
   margin: 20px;
   display: flex;
   justify-content: center; }
-  .card-8 .face-8 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: .5s; }
-  .card-8 .front-8 {
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px #000000; }
-    .card-8 .front-8 img {
+  .card-8 .cardsub-8 {
+    position: relative;
+    width: 200px;
+    height: 300px; }
+    .card-8 .cardsub-8 .face-8 {
       position: absolute;
       width: 100%;
       height: 100%;
-      object-fit: cover; }
-  .card-8 .back-8 {
-    transform: perspective(600px) rotateY(180deg);
-    background: #584b13;
-    padding: 15px;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0 5px 10px #000000; }
-    .card-8 .back-8 h4 {
-      font-size: 20px;
-      margin-top: 5px; }
-  .card-8:hover .front-8 {
-    transform: perspective(600px) rotateY(180deg); }
-  .card-8:hover .back-8 {
-    transform: perspective(600px) rotateY(360deg); }
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: .5s; }
+    .card-8 .cardsub-8 .front-8 {
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px 10px #000000; }
+      .card-8 .cardsub-8 .front-8 img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .card-8 .cardsub-8 .back-8 {
+      transform: perspective(600px) rotateY(180deg);
+      background: #584b13;
+      padding: 15px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 5px 10px #000000; }
+      .card-8 .cardsub-8 .back-8 h4 {
+        font-size: 20px;
+        margin-top: 5px; }
+    .card-8 .cardsub-8:hover .front-8 {
+      transform: perspective(600px) rotateY(180deg); }
+    .card-8 .cardsub-8:hover .back-8 {
+      transform: perspective(600px) rotateY(360deg); }
 
 .card-9 {
-  position: relative;
-  width: 200px;
-  height: 300px;
   margin: 20px;
   display: flex;
   justify-content: center; }
-  .card-9 .face-9 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: .5s; }
-  .card-9 .front-9 {
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px #000000; }
-    .card-9 .front-9 img {
+  .card-9 .cardsub-9 {
+    position: relative;
+    width: 200px;
+    height: 300px; }
+    .card-9 .cardsub-9 .face-9 {
       position: absolute;
       width: 100%;
       height: 100%;
-      object-fit: cover; }
-  .card-9 .back-9 {
-    transform: perspective(600px) rotateY(180deg);
-    background: #584b13;
-    padding: 15px;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0 5px 10px #000000; }
-    .card-9 .back-9 h4 {
-      font-size: 20px;
-      margin-top: 5px; }
-  .card-9:hover .front-9 {
-    transform: perspective(600px) rotateY(180deg); }
-  .card-9:hover .back-9 {
-    transform: perspective(600px) rotateY(360deg); }
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: .5s; }
+    .card-9 .cardsub-9 .front-9 {
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px 10px #000000; }
+      .card-9 .cardsub-9 .front-9 img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .card-9 .cardsub-9 .back-9 {
+      transform: perspective(600px) rotateY(180deg);
+      background: #584b13;
+      padding: 15px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 5px 10px #000000; }
+      .card-9 .cardsub-9 .back-9 h4 {
+        font-size: 20px;
+        margin-top: 5px; }
+    .card-9 .cardsub-9:hover .front-9 {
+      transform: perspective(600px) rotateY(180deg); }
+    .card-9 .cardsub-9:hover .back-9 {
+      transform: perspective(600px) rotateY(360deg); }
 
 .card-10 {
-  position: relative;
-  width: 200px;
-  height: 300px;
   margin: 20px;
   display: flex;
   justify-content: center; }
-  .card-10 .face-10 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: .5s; }
-  .card-10 .front-10 {
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px #000000; }
-    .card-10 .front-10 img {
+  .card-10 .cardsub-10 {
+    position: relative;
+    width: 200px;
+    height: 300px; }
+    .card-10 .cardsub-10 .face-10 {
       position: absolute;
       width: 100%;
       height: 100%;
-      object-fit: cover; }
-  .card-10 .back-10 {
-    transform: perspective(600px) rotateY(180deg);
-    background: #584b13;
-    padding: 15px;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0 5px 10px #000000; }
-    .card-10 .back-10 h4 {
-      font-size: 20px;
-      margin-top: 5px; }
-  .card-10:hover .front-10 {
-    transform: perspective(600px) rotateY(180deg); }
-  .card-10:hover .back-10 {
-    transform: perspective(600px) rotateY(360deg); }
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: .5s; }
+    .card-10 .cardsub-10 .front-10 {
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px 10px #000000; }
+      .card-10 .cardsub-10 .front-10 img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .card-10 .cardsub-10 .back-10 {
+      transform: perspective(600px) rotateY(180deg);
+      background: #584b13;
+      padding: 15px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 5px 10px #000000; }
+      .card-10 .cardsub-10 .back-10 h4 {
+        font-size: 20px;
+        margin-top: 5px; }
+    .card-10 .cardsub-10:hover .front-10 {
+      transform: perspective(600px) rotateY(180deg); }
+    .card-10 .cardsub-10:hover .back-10 {
+      transform: perspective(600px) rotateY(360deg); }
 
 .card-11 {
-  position: relative;
-  width: 200px;
-  height: 300px;
   margin: 20px;
   display: flex;
   justify-content: center; }
-  .card-11 .face-11 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: .5s; }
-  .card-11 .front-11 {
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px #000000; }
-    .card-11 .front-11 img {
+  .card-11 .cardsub-11 {
+    position: relative;
+    width: 200px;
+    height: 300px; }
+    .card-11 .cardsub-11 .face-11 {
       position: absolute;
       width: 100%;
       height: 100%;
-      object-fit: cover; }
-  .card-11 .back-11 {
-    transform: perspective(600px) rotateY(180deg);
-    background: #584b13;
-    padding: 15px;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0 5px 10px #000000; }
-    .card-11 .back-11 h4 {
-      font-size: 20px;
-      margin-top: 5px; }
-  .card-11:hover .front-11 {
-    transform: perspective(600px) rotateY(180deg); }
-  .card-11:hover .back-11 {
-    transform: perspective(600px) rotateY(360deg); }
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: .5s; }
+    .card-11 .cardsub-11 .front-11 {
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px 10px #000000; }
+      .card-11 .cardsub-11 .front-11 img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .card-11 .cardsub-11 .back-11 {
+      transform: perspective(600px) rotateY(180deg);
+      background: #584b13;
+      padding: 15px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 5px 10px #000000; }
+      .card-11 .cardsub-11 .back-11 h4 {
+        font-size: 20px;
+        margin-top: 5px; }
+    .card-11 .cardsub-11:hover .front-11 {
+      transform: perspective(600px) rotateY(180deg); }
+    .card-11 .cardsub-11:hover .back-11 {
+      transform: perspective(600px) rotateY(360deg); }
 
 .card-12 {
-  position: relative;
-  width: 200px;
-  height: 300px;
   margin: 20px;
   display: flex;
   justify-content: center; }
-  .card-12 .face-12 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: .5s; }
-  .card-12 .front-12 {
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px #000000; }
-    .card-12 .front-12 img {
+  .card-12 .cardsub-12 {
+    position: relative;
+    width: 200px;
+    height: 300px; }
+    .card-12 .cardsub-12 .face-12 {
       position: absolute;
       width: 100%;
       height: 100%;
-      object-fit: cover; }
-  .card-12 .back-12 {
-    transform: perspective(600px) rotateY(180deg);
-    background: #584b13;
-    padding: 15px;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0 5px 10px #000000; }
-    .card-12 .back-12 h4 {
-      font-size: 20px;
-      margin-top: 5px; }
-  .card-12:hover .front-12 {
-    transform: perspective(600px) rotateY(180deg); }
-  .card-12:hover .back-12 {
-    transform: perspective(600px) rotateY(360deg); }
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: .5s; }
+    .card-12 .cardsub-12 .front-12 {
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px 10px #000000; }
+      .card-12 .cardsub-12 .front-12 img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .card-12 .cardsub-12 .back-12 {
+      transform: perspective(600px) rotateY(180deg);
+      background: #584b13;
+      padding: 15px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 5px 10px #000000; }
+      .card-12 .cardsub-12 .back-12 h4 {
+        font-size: 20px;
+        margin-top: 5px; }
+    .card-12 .cardsub-12:hover .front-12 {
+      transform: perspective(600px) rotateY(180deg); }
+    .card-12 .cardsub-12:hover .back-12 {
+      transform: perspective(600px) rotateY(360deg); }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .grid-1 {
@@ -808,485 +820,497 @@ body {
     justify-content: center;
     margin: 20px; }
   .card-1 {
-    position: relative;
-    width: 200px;
-    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-1 .face-1 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-1 .front-1 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-1 .front-1 img {
+    .card-1 .cardsub-1 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-1 .cardsub-1 .face-1 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-1 .back-1 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-1 .back-1 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-1:hover .front-1 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-1:hover .back-1 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-1 .cardsub-1 .front-1 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-1 .cardsub-1 .front-1 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-1 .cardsub-1 .back-1 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-1 .cardsub-1 .back-1 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-1 .cardsub-1:hover .front-1 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-1 .cardsub-1:hover .back-1 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-2 {
-    position: relative;
-    width: 200px;
-    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-2 .face-2 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-2 .front-2 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-2 .front-2 img {
+    .card-2 .cardsub-2 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-2 .cardsub-2 .face-2 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-2 .back-2 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-2 .back-2 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-2:hover .front-2 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-2:hover .back-2 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-2 .cardsub-2 .front-2 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-2 .cardsub-2 .front-2 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-2 .cardsub-2 .back-2 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-2 .cardsub-2 .back-2 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-2 .cardsub-2:hover .front-2 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-2 .cardsub-2:hover .back-2 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-3 {
-    position: relative;
-    width: 200px;
-    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-3 .face-3 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-3 .front-3 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-3 .front-3 img {
+    .card-3 .cardsub-3 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-3 .cardsub-3 .face-3 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-3 .back-3 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-3 .back-3 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-3:hover .front-3 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-3:hover .back-3 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-3 .cardsub-3 .front-3 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-3 .cardsub-3 .front-3 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-3 .cardsub-3 .back-3 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-3 .cardsub-3 .back-3 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-3 .cardsub-3:hover .front-3 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-3 .cardsub-3:hover .back-3 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-4 {
-    position: relative;
-    width: 200px;
-    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-4 .face-4 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-4 .front-4 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-4 .front-4 img {
+    .card-4 .cardsub-4 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-4 .cardsub-4 .face-4 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-4 .back-4 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-4 .back-4 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-4:hover .front-4 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-4:hover .back-4 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-4 .cardsub-4 .front-4 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-4 .cardsub-4 .front-4 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-4 .cardsub-4 .back-4 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-4 .cardsub-4 .back-4 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-4 .cardsub-4:hover .front-4 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-4 .cardsub-4:hover .back-4 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-5 {
-    position: relative;
-    width: 200px;
-    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-5 .face-5 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-5 .front-5 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-5 .front-5 img {
+    .card-5 .cardsub-5 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-5 .cardsub-5 .face-5 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-5 .back-5 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-5 .back-5 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-5:hover .front-5 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-5:hover .back-5 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-5 .cardsub-5 .front-5 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-5 .cardsub-5 .front-5 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-5 .cardsub-5 .back-5 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-5 .cardsub-5 .back-5 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-5 .cardsub-5:hover .front-5 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-5 .cardsub-5:hover .back-5 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-6 {
-    position: relative;
-    width: 200px;
-    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-6 .face-6 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-6 .front-6 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-6 .front-6 img {
+    .card-6 .cardsub-6 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-6 .cardsub-6 .face-6 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-6 .back-6 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-6 .back-6 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-6:hover .front-6 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-6:hover .back-6 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-6 .cardsub-6 .front-6 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-6 .cardsub-6 .front-6 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-6 .cardsub-6 .back-6 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-6 .cardsub-6 .back-6 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-6 .cardsub-6:hover .front-6 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-6 .cardsub-6:hover .back-6 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-7 {
-    position: relative;
-    width: 200px;
-    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-7 .face-7 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-7 .front-7 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-7 .front-7 img {
+    .card-7 .cardsub-7 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-7 .cardsub-7 .face-7 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-7 .back-7 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-7 .back-7 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-7:hover .front-7 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-7:hover .back-7 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-7 .cardsub-7 .front-7 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-7 .cardsub-7 .front-7 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-7 .cardsub-7 .back-7 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-7 .cardsub-7 .back-7 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-7 .cardsub-7:hover .front-7 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-7 .cardsub-7:hover .back-7 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-8 {
-    position: relative;
-    width: 200px;
-    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-8 .face-8 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-8 .front-8 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-8 .front-8 img {
+    .card-8 .cardsub-8 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-8 .cardsub-8 .face-8 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-8 .back-8 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-8 .back-8 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-8:hover .front-8 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-8:hover .back-8 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-8 .cardsub-8 .front-8 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-8 .cardsub-8 .front-8 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-8 .cardsub-8 .back-8 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-8 .cardsub-8 .back-8 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-8 .cardsub-8:hover .front-8 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-8 .cardsub-8:hover .back-8 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-9 {
-    position: relative;
-    width: 200px;
-    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-9 .face-9 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-9 .front-9 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-9 .front-9 img {
+    .card-9 .cardsub-9 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-9 .cardsub-9 .face-9 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-9 .back-9 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-9 .back-9 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-9:hover .front-9 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-9:hover .back-9 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-9 .cardsub-9 .front-9 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-9 .cardsub-9 .front-9 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-9 .cardsub-9 .back-9 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-9 .cardsub-9 .back-9 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-9 .cardsub-9:hover .front-9 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-9 .cardsub-9:hover .back-9 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-10 {
-    position: relative;
-    width: 200px;
-    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-10 .face-10 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-10 .front-10 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-10 .front-10 img {
+    .card-10 .cardsub-10 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-10 .cardsub-10 .face-10 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-10 .back-10 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-10 .back-10 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-10:hover .front-10 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-10:hover .back-10 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-10 .cardsub-10 .front-10 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-10 .cardsub-10 .front-10 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-10 .cardsub-10 .back-10 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-10 .cardsub-10 .back-10 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-10 .cardsub-10:hover .front-10 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-10 .cardsub-10:hover .back-10 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-11 {
-    position: relative;
-    width: 200px;
-    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-11 .face-11 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-11 .front-11 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-11 .front-11 img {
+    .card-11 .cardsub-11 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-11 .cardsub-11 .face-11 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-11 .back-11 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-11 .back-11 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-11:hover .front-11 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-11:hover .back-11 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-11 .cardsub-11 .front-11 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-11 .cardsub-11 .front-11 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-11 .cardsub-11 .back-11 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-11 .cardsub-11 .back-11 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-11 .cardsub-11:hover .front-11 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-11 .cardsub-11:hover .back-11 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-12 {
-    position: relative;
-    width: 200px;
-    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-12 .face-12 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-12 .front-12 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-12 .front-12 img {
+    .card-12 .cardsub-12 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-12 .cardsub-12 .face-12 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-12 .back-12 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-12 .back-12 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-12:hover .front-12 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-12:hover .back-12 {
-      transform: perspective(600px) rotateY(360deg); } }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-12 .cardsub-12 .front-12 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-12 .cardsub-12 .front-12 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-12 .cardsub-12 .back-12 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-12 .cardsub-12 .back-12 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-12 .cardsub-12:hover .front-12 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-12 .cardsub-12:hover .back-12 {
+        transform: perspective(600px) rotateY(360deg); } }
 
 @media screen and (min-width: 465px) and (max-width: 767px) {
   .grid-1 {
@@ -1303,485 +1327,497 @@ body {
     justify-content: center;
     margin: 20px; }
   .card-1 {
-    position: relative;
-    width: 200px;
-    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-1 .face-1 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-1 .front-1 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-1 .front-1 img {
+    .card-1 .cardsub-1 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-1 .cardsub-1 .face-1 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-1 .back-1 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-1 .back-1 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-1:hover .front-1 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-1:hover .back-1 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-1 .cardsub-1 .front-1 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-1 .cardsub-1 .front-1 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-1 .cardsub-1 .back-1 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-1 .cardsub-1 .back-1 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-1 .cardsub-1:hover .front-1 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-1 .cardsub-1:hover .back-1 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-2 {
-    position: relative;
-    width: 200px;
-    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-2 .face-2 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-2 .front-2 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-2 .front-2 img {
+    .card-2 .cardsub-2 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-2 .cardsub-2 .face-2 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-2 .back-2 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-2 .back-2 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-2:hover .front-2 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-2:hover .back-2 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-2 .cardsub-2 .front-2 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-2 .cardsub-2 .front-2 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-2 .cardsub-2 .back-2 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-2 .cardsub-2 .back-2 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-2 .cardsub-2:hover .front-2 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-2 .cardsub-2:hover .back-2 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-3 {
-    position: relative;
-    width: 200px;
-    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-3 .face-3 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-3 .front-3 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-3 .front-3 img {
+    .card-3 .cardsub-3 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-3 .cardsub-3 .face-3 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-3 .back-3 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-3 .back-3 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-3:hover .front-3 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-3:hover .back-3 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-3 .cardsub-3 .front-3 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-3 .cardsub-3 .front-3 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-3 .cardsub-3 .back-3 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-3 .cardsub-3 .back-3 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-3 .cardsub-3:hover .front-3 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-3 .cardsub-3:hover .back-3 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-4 {
-    position: relative;
-    width: 200px;
-    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-4 .face-4 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-4 .front-4 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-4 .front-4 img {
+    .card-4 .cardsub-4 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-4 .cardsub-4 .face-4 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-4 .back-4 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-4 .back-4 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-4:hover .front-4 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-4:hover .back-4 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-4 .cardsub-4 .front-4 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-4 .cardsub-4 .front-4 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-4 .cardsub-4 .back-4 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-4 .cardsub-4 .back-4 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-4 .cardsub-4:hover .front-4 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-4 .cardsub-4:hover .back-4 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-5 {
-    position: relative;
-    width: 200px;
-    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-5 .face-5 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-5 .front-5 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-5 .front-5 img {
+    .card-5 .cardsub-5 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-5 .cardsub-5 .face-5 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-5 .back-5 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-5 .back-5 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-5:hover .front-5 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-5:hover .back-5 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-5 .cardsub-5 .front-5 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-5 .cardsub-5 .front-5 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-5 .cardsub-5 .back-5 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-5 .cardsub-5 .back-5 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-5 .cardsub-5:hover .front-5 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-5 .cardsub-5:hover .back-5 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-6 {
-    position: relative;
-    width: 200px;
-    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-6 .face-6 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-6 .front-6 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-6 .front-6 img {
+    .card-6 .cardsub-6 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-6 .cardsub-6 .face-6 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-6 .back-6 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-6 .back-6 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-6:hover .front-6 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-6:hover .back-6 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-6 .cardsub-6 .front-6 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-6 .cardsub-6 .front-6 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-6 .cardsub-6 .back-6 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-6 .cardsub-6 .back-6 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-6 .cardsub-6:hover .front-6 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-6 .cardsub-6:hover .back-6 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-7 {
-    position: relative;
-    width: 200px;
-    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-7 .face-7 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-7 .front-7 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-7 .front-7 img {
+    .card-7 .cardsub-7 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-7 .cardsub-7 .face-7 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-7 .back-7 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-7 .back-7 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-7:hover .front-7 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-7:hover .back-7 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-7 .cardsub-7 .front-7 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-7 .cardsub-7 .front-7 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-7 .cardsub-7 .back-7 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-7 .cardsub-7 .back-7 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-7 .cardsub-7:hover .front-7 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-7 .cardsub-7:hover .back-7 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-8 {
-    position: relative;
-    width: 200px;
-    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-8 .face-8 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-8 .front-8 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-8 .front-8 img {
+    .card-8 .cardsub-8 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-8 .cardsub-8 .face-8 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-8 .back-8 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-8 .back-8 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-8:hover .front-8 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-8:hover .back-8 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-8 .cardsub-8 .front-8 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-8 .cardsub-8 .front-8 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-8 .cardsub-8 .back-8 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-8 .cardsub-8 .back-8 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-8 .cardsub-8:hover .front-8 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-8 .cardsub-8:hover .back-8 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-9 {
-    position: relative;
-    width: 200px;
-    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-9 .face-9 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-9 .front-9 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-9 .front-9 img {
+    .card-9 .cardsub-9 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-9 .cardsub-9 .face-9 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-9 .back-9 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-9 .back-9 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-9:hover .front-9 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-9:hover .back-9 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-9 .cardsub-9 .front-9 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-9 .cardsub-9 .front-9 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-9 .cardsub-9 .back-9 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-9 .cardsub-9 .back-9 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-9 .cardsub-9:hover .front-9 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-9 .cardsub-9:hover .back-9 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-10 {
-    position: relative;
-    width: 200px;
-    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-10 .face-10 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-10 .front-10 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-10 .front-10 img {
+    .card-10 .cardsub-10 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-10 .cardsub-10 .face-10 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-10 .back-10 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-10 .back-10 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-10:hover .front-10 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-10:hover .back-10 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-10 .cardsub-10 .front-10 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-10 .cardsub-10 .front-10 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-10 .cardsub-10 .back-10 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-10 .cardsub-10 .back-10 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-10 .cardsub-10:hover .front-10 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-10 .cardsub-10:hover .back-10 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-11 {
-    position: relative;
-    width: 200px;
-    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-11 .face-11 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-11 .front-11 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-11 .front-11 img {
+    .card-11 .cardsub-11 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-11 .cardsub-11 .face-11 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-11 .back-11 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-11 .back-11 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-11:hover .front-11 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-11:hover .back-11 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-11 .cardsub-11 .front-11 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-11 .cardsub-11 .front-11 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-11 .cardsub-11 .back-11 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-11 .cardsub-11 .back-11 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-11 .cardsub-11:hover .front-11 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-11 .cardsub-11:hover .back-11 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-12 {
-    position: relative;
-    width: 200px;
-    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-12 .face-12 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-12 .front-12 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-12 .front-12 img {
+    .card-12 .cardsub-12 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-12 .cardsub-12 .face-12 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-12 .back-12 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-12 .back-12 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-12:hover .front-12 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-12:hover .back-12 {
-      transform: perspective(600px) rotateY(360deg); } }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-12 .cardsub-12 .front-12 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-12 .cardsub-12 .front-12 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-12 .cardsub-12 .back-12 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-12 .cardsub-12 .back-12 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-12 .cardsub-12:hover .front-12 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-12 .cardsub-12:hover .back-12 {
+        transform: perspective(600px) rotateY(360deg); } }
 
 @media screen and (max-width: 464px) {
   .grid-1 {
@@ -1798,485 +1834,497 @@ body {
     justify-content: center;
     margin: 20px; }
   .card-1 {
-    position: relative;
-    width: 100px;
-    height: 200px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-1 .face-1 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-1 .front-1 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-1 .front-1 img {
+    .card-1 .cardsub-1 {
+      position: relative;
+      width: 100px;
+      height: 200px; }
+      .card-1 .cardsub-1 .face-1 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-1 .back-1 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-1 .back-1 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-1:hover .front-1 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-1:hover .back-1 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-1 .cardsub-1 .front-1 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-1 .cardsub-1 .front-1 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-1 .cardsub-1 .back-1 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-1 .cardsub-1 .back-1 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-1 .cardsub-1:hover .front-1 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-1 .cardsub-1:hover .back-1 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-2 {
-    position: relative;
-    width: 100px;
-    height: 200px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-2 .face-2 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-2 .front-2 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-2 .front-2 img {
+    .card-2 .cardsub-2 {
+      position: relative;
+      width: 100px;
+      height: 200px; }
+      .card-2 .cardsub-2 .face-2 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-2 .back-2 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-2 .back-2 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-2:hover .front-2 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-2:hover .back-2 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-2 .cardsub-2 .front-2 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-2 .cardsub-2 .front-2 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-2 .cardsub-2 .back-2 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-2 .cardsub-2 .back-2 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-2 .cardsub-2:hover .front-2 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-2 .cardsub-2:hover .back-2 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-3 {
-    position: relative;
-    width: 100px;
-    height: 200px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-3 .face-3 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-3 .front-3 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-3 .front-3 img {
+    .card-3 .cardsub-3 {
+      position: relative;
+      width: 100px;
+      height: 200px; }
+      .card-3 .cardsub-3 .face-3 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-3 .back-3 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-3 .back-3 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-3:hover .front-3 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-3:hover .back-3 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-3 .cardsub-3 .front-3 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-3 .cardsub-3 .front-3 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-3 .cardsub-3 .back-3 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-3 .cardsub-3 .back-3 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-3 .cardsub-3:hover .front-3 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-3 .cardsub-3:hover .back-3 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-4 {
-    position: relative;
-    width: 100px;
-    height: 200px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-4 .face-4 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-4 .front-4 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-4 .front-4 img {
+    .card-4 .cardsub-4 {
+      position: relative;
+      width: 100px;
+      height: 200px; }
+      .card-4 .cardsub-4 .face-4 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-4 .back-4 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-4 .back-4 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-4:hover .front-4 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-4:hover .back-4 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-4 .cardsub-4 .front-4 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-4 .cardsub-4 .front-4 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-4 .cardsub-4 .back-4 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-4 .cardsub-4 .back-4 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-4 .cardsub-4:hover .front-4 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-4 .cardsub-4:hover .back-4 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-5 {
-    position: relative;
-    width: 100px;
-    height: 200px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-5 .face-5 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-5 .front-5 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-5 .front-5 img {
+    .card-5 .cardsub-5 {
+      position: relative;
+      width: 100px;
+      height: 200px; }
+      .card-5 .cardsub-5 .face-5 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-5 .back-5 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-5 .back-5 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-5:hover .front-5 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-5:hover .back-5 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-5 .cardsub-5 .front-5 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-5 .cardsub-5 .front-5 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-5 .cardsub-5 .back-5 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-5 .cardsub-5 .back-5 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-5 .cardsub-5:hover .front-5 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-5 .cardsub-5:hover .back-5 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-6 {
-    position: relative;
-    width: 100px;
-    height: 200px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-6 .face-6 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-6 .front-6 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-6 .front-6 img {
+    .card-6 .cardsub-6 {
+      position: relative;
+      width: 100px;
+      height: 200px; }
+      .card-6 .cardsub-6 .face-6 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-6 .back-6 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-6 .back-6 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-6:hover .front-6 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-6:hover .back-6 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-6 .cardsub-6 .front-6 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-6 .cardsub-6 .front-6 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-6 .cardsub-6 .back-6 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-6 .cardsub-6 .back-6 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-6 .cardsub-6:hover .front-6 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-6 .cardsub-6:hover .back-6 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-7 {
-    position: relative;
-    width: 100px;
-    height: 200px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-7 .face-7 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-7 .front-7 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-7 .front-7 img {
+    .card-7 .cardsub-7 {
+      position: relative;
+      width: 100px;
+      height: 200px; }
+      .card-7 .cardsub-7 .face-7 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-7 .back-7 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-7 .back-7 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-7:hover .front-7 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-7:hover .back-7 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-7 .cardsub-7 .front-7 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-7 .cardsub-7 .front-7 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-7 .cardsub-7 .back-7 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-7 .cardsub-7 .back-7 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-7 .cardsub-7:hover .front-7 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-7 .cardsub-7:hover .back-7 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-8 {
-    position: relative;
-    width: 100px;
-    height: 200px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-8 .face-8 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-8 .front-8 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-8 .front-8 img {
+    .card-8 .cardsub-8 {
+      position: relative;
+      width: 100px;
+      height: 200px; }
+      .card-8 .cardsub-8 .face-8 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-8 .back-8 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-8 .back-8 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-8:hover .front-8 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-8:hover .back-8 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-8 .cardsub-8 .front-8 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-8 .cardsub-8 .front-8 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-8 .cardsub-8 .back-8 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-8 .cardsub-8 .back-8 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-8 .cardsub-8:hover .front-8 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-8 .cardsub-8:hover .back-8 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-9 {
-    position: relative;
-    width: 100px;
-    height: 200px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-9 .face-9 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-9 .front-9 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-9 .front-9 img {
+    .card-9 .cardsub-9 {
+      position: relative;
+      width: 100px;
+      height: 200px; }
+      .card-9 .cardsub-9 .face-9 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-9 .back-9 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-9 .back-9 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-9:hover .front-9 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-9:hover .back-9 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-9 .cardsub-9 .front-9 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-9 .cardsub-9 .front-9 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-9 .cardsub-9 .back-9 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-9 .cardsub-9 .back-9 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-9 .cardsub-9:hover .front-9 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-9 .cardsub-9:hover .back-9 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-10 {
-    position: relative;
-    width: 100px;
-    height: 200px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-10 .face-10 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-10 .front-10 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-10 .front-10 img {
+    .card-10 .cardsub-10 {
+      position: relative;
+      width: 100px;
+      height: 200px; }
+      .card-10 .cardsub-10 .face-10 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-10 .back-10 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-10 .back-10 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-10:hover .front-10 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-10:hover .back-10 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-10 .cardsub-10 .front-10 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-10 .cardsub-10 .front-10 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-10 .cardsub-10 .back-10 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-10 .cardsub-10 .back-10 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-10 .cardsub-10:hover .front-10 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-10 .cardsub-10:hover .back-10 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-11 {
-    position: relative;
-    width: 100px;
-    height: 200px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-11 .face-11 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-11 .front-11 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-11 .front-11 img {
+    .card-11 .cardsub-11 {
+      position: relative;
+      width: 100px;
+      height: 200px; }
+      .card-11 .cardsub-11 .face-11 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-11 .back-11 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-11 .back-11 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-11:hover .front-11 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-11:hover .back-11 {
-      transform: perspective(600px) rotateY(360deg); }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-11 .cardsub-11 .front-11 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-11 .cardsub-11 .front-11 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-11 .cardsub-11 .back-11 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-11 .cardsub-11 .back-11 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-11 .cardsub-11:hover .front-11 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-11 .cardsub-11:hover .back-11 {
+        transform: perspective(600px) rotateY(360deg); }
   .card-12 {
-    position: relative;
-    width: 100px;
-    height: 200px;
     margin: 20px;
     display: flex;
     justify-content: center; }
-    .card-12 .face-12 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .5s; }
-    .card-12 .front-12 {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px 10px #000000; }
-      .card-12 .front-12 img {
+    .card-12 .cardsub-12 {
+      position: relative;
+      width: 100px;
+      height: 200px; }
+      .card-12 .cardsub-12 .face-12 {
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .card-12 .back-12 {
-      transform: perspective(600px) rotateY(180deg);
-      background: #584b13;
-      padding: 15px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 5px 10px #000000; }
-      .card-12 .back-12 h4 {
-        font-size: 20px;
-        margin-top: 5px; }
-    .card-12:hover .front-12 {
-      transform: perspective(600px) rotateY(180deg); }
-    .card-12:hover .back-12 {
-      transform: perspective(600px) rotateY(360deg); } }
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-12 .cardsub-12 .front-12 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-12 .cardsub-12 .front-12 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-12 .cardsub-12 .back-12 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-12 .cardsub-12 .back-12 h4 {
+          font-size: 20px;
+          margin-top: 5px; }
+      .card-12 .cardsub-12:hover .front-12 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-12 .cardsub-12:hover .back-12 {
+        transform: perspective(600px) rotateY(360deg); } }
 
 * {
   margin: 0;
