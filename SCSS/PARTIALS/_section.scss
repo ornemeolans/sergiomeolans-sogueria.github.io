@@ -1,32 +1,103 @@
 @import "../VARIABLES/variables";
 
 .banner {
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .call-to-action {
+    @media screen and (min-width:1024px) {
+        height: 300px;
+        background-image: url(../../ASSETS/IMG/fondo-banner.jpg);
+        background-position: center;
+        background-size: cover;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
+
+        .call-to-action {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        p {
+            font-size: $p-size-desktop;
+            margin-top: 16px;
+        }
+
+        h2 {
+            font-size: $h2-size-desktop;
+            margin-top: 8px;
+        }
+
+        a {
+            font-size: $a-size-desktop;
+            text-decoration: none;
+            color: $font-color;
+            margin: 4px 0px;
+        }
     }
 
-    p {
-        font-size: $p-size-desktop;
-        margin-top: 16px;
+    @media screen and (min-width:768px) and (max-width:1023px) {
+        height: 200px;
+        background-image: url(../../ASSETS/IMG/fondo-banner.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .call-to-action {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        p {
+            font-size: $p-size-mobile;
+            margin-top: 16px;
+        }
+
+        h2 {
+            font-size: $h2-size-mobile;
+            margin-top: 8px;
+        }
+
+        a {
+            font-size: $a-size-mobile;
+            text-decoration: none;
+            color: $font-color;
+            margin: 4px 0px;
+        }
     }
 
-    h2 {
-        font-size: $h2-size-desktop;
-        margin-top: 8px;
-    }
+    @media screen and (max-width:767px) {
+        height: 100px;
+        background-image: url(../../ASSETS/IMG/fondo-banner.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-    a {
-        font-size: $a-size-desktop;
-        text-decoration: none;
-        color: $font-color;
-        margin: 4px 0px;
+        .call-to-action {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        p {
+            font-size: $p-size-mobile;
+            margin-top: 8px;
+        }
+
+        h2 {
+            font-size: $h2-size-mobile;
+            margin-top: 4px;
+        }
+
+        a {
+            font-size: $a-size-mobile;
+            text-decoration: none;
+            color: $font-color;
+            margin: 2px 0px;
+        }
     }
 }
 
@@ -67,6 +138,14 @@
             margin: 5px 0px;
         }
 
+        p {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: $p-size-mobile;
+            margin: 10px 0px;
+        }
+        
         .video {
             display: flex;
             flex-direction: row;
@@ -86,6 +165,14 @@
             justify-content: center;
             font-size: $h2-size-mobile;
             margin: 3px 0px;
+        }
+
+        p {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: $p-size-mobile;
+            margin: 5px 0px;
         }
 
         .video {
@@ -449,8 +536,14 @@
             box-shadow: 0 5px 10px #000000;
 
             h4 {
-                font-size: 20px;
+                font-size: $h4-size-desktop;
                 margin-top: 5px;
+                text-align: center;
+            }
+
+            p{
+                font-size: $p-size-desktop;
+                text-align: center;
             }
         }
 
@@ -508,8 +601,14 @@
             box-shadow: 0 5px 10px #000000;
 
             h4 {
-                font-size: 20px;
+                font-size: $h4-size-desktop;
                 margin-top: 5px;
+                text-align: center;
+            }
+
+            p{
+                font-size: $p-size-desktop;
+                text-align: center;
             }
         }
 
@@ -567,8 +666,14 @@
             box-shadow: 0 5px 10px #000000;
 
             h4 {
-                font-size: 20px;
+                font-size: $h4-size-desktop;
                 margin-top: 5px;
+                text-align: center;
+            }
+
+            p{
+                font-size: $p-size-desktop;
+                text-align: center;
             }
         }
 
@@ -626,8 +731,14 @@
             box-shadow: 0 5px 10px #000000;
 
             h4 {
-                font-size: 20px;
+                font-size: $h4-size-desktop;
                 margin-top: 5px;
+                text-align: center;
+            }
+
+            p{
+                font-size: $p-size-desktop;
+                text-align: center;
             }
         }
 
@@ -685,8 +796,14 @@
             box-shadow: 0 5px 10px #000000;
 
             h4 {
-                font-size: 20px;
+                font-size: $h4-size-desktop;
                 margin-top: 5px;
+                text-align: center;
+            }
+
+            p{
+                font-size: $p-size-desktop;
+                text-align: center;
             }
         }
 
@@ -744,8 +861,14 @@
             box-shadow: 0 5px 10px #000000;
 
             h4 {
-                font-size: 20px;
+                font-size: $h4-size-desktop;
                 margin-top: 5px;
+                text-align: center;
+            }
+
+            p{
+                font-size: $p-size-desktop;
+                text-align: center;
             }
         }
 
@@ -803,8 +926,14 @@
             box-shadow: 0 5px 10px #000000;
 
             h4 {
-                font-size: 20px;
+                font-size: $h4-size-desktop;
                 margin-top: 5px;
+                text-align: center;
+            }
+
+            p{
+                font-size: $p-size-desktop;
+                text-align: center;
             }
         }
 
@@ -862,8 +991,14 @@
             box-shadow: 0 5px 10px #000000;
 
             h4 {
-                font-size: 20px;
+                font-size: $h4-size-desktop;
                 margin-top: 5px;
+                text-align: center;
+            }
+
+            p{
+                font-size: $p-size-desktop;
+                text-align: center;
             }
         }
 
@@ -921,8 +1056,14 @@
             box-shadow: 0 5px 10px #000000;
 
             h4 {
-                font-size: 20px;
+                font-size: $h4-size-desktop;
                 margin-top: 5px;
+                text-align: center;
+            }
+
+            p{
+                font-size: $p-size-desktop;
+                text-align: center;
             }
         }
 
@@ -980,8 +1121,14 @@
             box-shadow: 0 5px 10px #000000;
 
             h4 {
-                font-size: 20px;
+                font-size: $h4-size-desktop;
                 margin-top: 5px;
+                text-align: center;
+            }
+
+            p{
+                font-size: $p-size-desktop;
+                text-align: center;
             }
         }
 
@@ -1039,8 +1186,14 @@
             box-shadow: 0 5px 10px #000000;
 
             h4 {
-                font-size: 20px;
+                font-size: $h4-size-desktop;
                 margin-top: 5px;
+                text-align: center;
+            }
+
+            p{
+                font-size: $p-size-desktop;
+                text-align: center;
             }
         }
 
@@ -1098,8 +1251,14 @@
             box-shadow: 0 5px 10px #000000;
 
             h4 {
-                font-size: 20px;
+                font-size: $h4-size-desktop;
                 margin-top: 5px;
+                text-align: center;
+            }
+
+            p{
+                font-size: $p-size-desktop;
+                text-align: center;
             }
         }
 
@@ -1183,9 +1342,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-1 {
@@ -1242,9 +1407,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-2 {
@@ -1301,9 +1472,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-3 {
@@ -1360,9 +1537,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-4 {
@@ -1419,9 +1602,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-5 {
@@ -1478,9 +1667,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-6 {
@@ -1537,9 +1732,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-7 {
@@ -1596,9 +1797,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-8 {
@@ -1655,9 +1862,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-9 {
@@ -1714,9 +1927,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-10 {
@@ -1773,9 +1992,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-11 {
@@ -1832,9 +2057,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-12 {
@@ -1883,8 +2114,8 @@
 
         .cardsub-1 {
             position: relative;
-            width: 200px;
-            height: 300px;
+            width: 100px;
+            height: 200px;
 
             .face-1 {
                 position: absolute;
@@ -1920,9 +2151,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-1 {
@@ -1942,8 +2179,8 @@
 
         .cardsub-2 {
             position: relative;
-            width: 200px;
-            height: 300px;
+            width: 100px;
+            height: 200px;
 
             .face-2 {
                 position: absolute;
@@ -1979,9 +2216,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-2 {
@@ -2001,8 +2244,8 @@
 
         .cardsub-3 {
             position: relative;
-            width: 200px;
-            height: 300px;
+            width: 100px;
+            height: 200px;
 
             .face-3 {
                 position: absolute;
@@ -2038,9 +2281,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-3 {
@@ -2060,8 +2309,8 @@
 
         .cardsub-4 {
             position: relative;
-            width: 200px;
-            height: 300px;
+            width: 100px;
+            height: 200px;
 
             .face-4 {
                 position: absolute;
@@ -2097,9 +2346,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-4 {
@@ -2119,8 +2374,8 @@
 
         .cardsub-5 {
             position: relative;
-            width: 200px;
-            height: 300px;
+            width: 100px;
+            height: 200px;
 
             .face-5 {
                 position: absolute;
@@ -2156,9 +2411,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-5 {
@@ -2178,8 +2439,8 @@
 
         .cardsub-6 {
             position: relative;
-            width: 200px;
-            height: 300px;
+            width: 100px;
+            height: 200px;
 
             .face-6 {
                 position: absolute;
@@ -2215,9 +2476,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-6 {
@@ -2237,8 +2504,8 @@
 
         .cardsub-7 {
             position: relative;
-            width: 200px;
-            height: 300px;
+            width: 100px;
+            height: 200px;
 
             .face-7 {
                 position: absolute;
@@ -2274,9 +2541,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-7 {
@@ -2296,8 +2569,8 @@
 
         .cardsub-8 {
             position: relative;
-            width: 200px;
-            height: 300px;
+            width: 100px;
+            height: 200px;
 
             .face-8 {
                 position: absolute;
@@ -2333,9 +2606,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-8 {
@@ -2355,8 +2634,8 @@
 
         .cardsub-9 {
             position: relative;
-            width: 200px;
-            height: 300px;
+            width: 100px;
+            height: 200px;
 
             .face-9 {
                 position: absolute;
@@ -2392,9 +2671,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-9 {
@@ -2414,8 +2699,8 @@
 
         .cardsub-10 {
             position: relative;
-            width: 200px;
-            height: 300px;
+            width: 100px;
+            height: 200px;
 
             .face-10 {
                 position: absolute;
@@ -2451,9 +2736,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-10 {
@@ -2473,8 +2764,8 @@
 
         .cardsub-11 {
             position: relative;
-            width: 200px;
-            height: 300px;
+            width: 100px;
+            height: 200px;
 
             .face-11 {
                 position: absolute;
@@ -2510,9 +2801,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-11 {
@@ -2532,8 +2829,8 @@
 
         .cardsub-12 {
             position: relative;
-            width: 200px;
-            height: 300px;
+            width: 100px;
+            height: 200px;
 
             .face-12 {
                 position: absolute;
@@ -2569,9 +2866,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-12 {
@@ -2589,20 +2892,21 @@
     .grid-1 {
         display: grid;
         grid-template-areas:
-        "title title"
-        "paragraph paragraph"
-        "card-1 card-2"
-        "card-3 card-4"
-        "card-5 card-6"
-        "card-7 card-8"
-        "card-9 card-10"
-        "card-11 card-12";
+            "title title"
+            "paragraph paragraph"
+            "card-1 card-2"
+            "card-3 card-4"
+            "card-5 card-6"
+            "card-7 card-8"
+            "card-9 card-10"
+            "card-11 card-12";
     }
 
     .title {
         grid-area: title;
         display: flex;
         justify-content: center;
+        text-align: center;
         margin: 20px;
     }
 
@@ -2657,9 +2961,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-1 {
@@ -2716,9 +3026,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-2 {
@@ -2775,9 +3091,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-3 {
@@ -2834,9 +3156,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-4 {
@@ -2893,9 +3221,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-5 {
@@ -2952,9 +3286,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-6 {
@@ -3011,9 +3351,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-7 {
@@ -3070,9 +3416,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-8 {
@@ -3129,9 +3481,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-9 {
@@ -3188,9 +3546,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-10 {
@@ -3247,9 +3611,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-11 {
@@ -3306,9 +3676,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: $h4-size-mobile;
                     margin-top: 5px;
-                }
+                    text-align: center;
+            }
+
+            p{
+                font-size: $p-size-mobile;
+                text-align: center;
+            }
             }
 
             &:hover .front-12 {
