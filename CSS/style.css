@@ -52,7 +52,7 @@ header {
 body {
   background-color: #ffe6ab;
   position: relative;
-  padding-bottom: 45px;
+  padding-bottom: 75px;
   min-height: 100vh; }
 
 @media screen and (min-width: 1024px) {
