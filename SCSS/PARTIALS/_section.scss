@@ -145,7 +145,7 @@
             font-size: $p-size-mobile;
             margin: 10px 0px;
         }
-        
+
         .video {
             display: flex;
             flex-direction: row;
@@ -191,19 +191,58 @@
 }
 
 .pages-banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @media screen and (min-width:1024px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    h1 {
-        margin: 15px 0px;
-        font-size: $h1-size-desktop;
-        font-style: bold;
+        h1 {
+            margin: 15px 0px;
+            font-size: $h1-size-desktop;
+            font-style: bold;
+        }
+
+        p {
+            margin: 5px 0px;
+            font-size: $p-size-desktop;
+            text-align: center;
+        }
     }
 
-    p {
-        margin: 5px 0px;
-        font-size: $p-size-desktop;
+    @media screen and (min-width:768px) and (max-width:1023px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            margin: 10px 0px;
+            font-size: $h1-size-desktop;
+            font-style: bold;
+        }
+
+        p {
+            margin: 4px 0px;
+            font-size: $p-size-desktop;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width:767px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            margin: 5px 0px;
+            font-size: $h1-size-mobile;
+            font-style: bold;
+        }
+
+        p {
+            margin: 2px 0px;
+            font-size: $p-size-mobile;
+            text-align: justify;
+        }
     }
 }
 
@@ -240,11 +279,20 @@
                 }
             }
 
-            iframe {
+            .embed {
+                position: relative;
                 width: 400px;
-                height: 200px;
-                margin-top: 25px;
+                height: 300px;
+                overflow: hidden;
                 margin-left: 20px;
+
+                iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
     }
@@ -291,11 +339,20 @@
                 }
             }
 
-            iframe {
-                width: 300px;
-                height: 100px;
-                margin-top: 15px;
-                margin-left: 10px;
+            .embed {
+                position: relative;
+                width: 400px;
+                height: 300px;
+                overflow: hidden;
+                margin-left: 15px;
+
+                iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
     }
@@ -334,10 +391,19 @@
                 }
             }
 
-            iframe {
-                width: 400px;
+            .embed {
+                position: relative;
+                width: 300px;
                 height: 200px;
-                margin-top: 25px;
+                overflow: hidden;
+
+                iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
     }
@@ -347,8 +413,9 @@
     display: grid;
     grid-template-areas:
         "text-1 text-1 text-1"
-        "text-2 text-2 img-1"
-        "img-2 img-2 none";
+        "img-1 text-2 img-3"
+        "img-4 img-2 text-3"
+        "text-4 img-5 none";
 }
 
 .text-1 {
@@ -356,16 +423,46 @@
     display: flex;
     justify-content: center;
     margin: 20px;
+
+    h1 {
+        font-size: $h1-size-desktop;
+    }
 }
 
 .text-2 {
     grid-area: text-2;
     margin: 20px;
+
+    p {
+        font-size: $p-size-desktop;
+        text-align: justify;
+    }
+}
+
+.text-3 {
+    grid-area: text-3;
+    margin: 20px;
+
+    p {
+        font-size: $p-size-desktop;
+        text-align: justify;
+    }
+}
+
+.text-4 {
+    grid-area: text-4;
+    margin: 20px;
+
+    p {
+        font-size: $p-size-desktop;
+        text-align: justify;
+    }
 }
 
 .img-1 {
     grid-area: img-1;
     margin: 20px;
+    display: flex;
     justify-content: center;
 
     img {
@@ -376,6 +473,40 @@
 .img-2 {
     grid-area: img-2;
     margin: 20px;
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 100%;
+    }
+}
+
+.img-3 {
+    grid-area: img-3;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 100%;
+    }
+}
+
+.img-4 {
+    grid-area: img-4;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 100%;
+    }
+}
+
+.img-5 {
+    grid-area: img-5;
+    margin: 20px;
+    display: flex;
     justify-content: center;
 
     img {
@@ -388,8 +519,10 @@
         display: grid;
         grid-template-areas:
             "text-1 text-1"
-            "text-2 img-1"
-            "img-2 none";
+            "img-1 text-2"
+            "img-3 img-4"
+            "text-3 img-2"
+            "text-4 img-5";
     }
 
     .text-1 {
@@ -397,16 +530,46 @@
         display: flex;
         justify-content: center;
         margin: 20px;
+
+        h1 {
+            font-size: $h1-size-desktop;
+        }
     }
 
     .text-2 {
         grid-area: text-2;
         margin: 20px;
+
+        p {
+            font-size: $p-size-desktop;
+            text-align: justify;
+        }
+    }
+
+    .text-3 {
+        grid-area: text-3;
+        margin: 20px;
+
+        p {
+            font-size: $p-size-desktop;
+            text-align: justify;
+        }
+    }
+
+    .text-4 {
+        grid-area: text-4;
+        margin: 20px;
+
+        p {
+            font-size: $p-size-desktop;
+            text-align: justify;
+        }
     }
 
     .img-1 {
         grid-area: img-1;
         margin: 20px;
+        display: flex;
         justify-content: center;
 
         img {
@@ -417,6 +580,40 @@
     .img-2 {
         grid-area: img-2;
         margin: 20px;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .img-3 {
+        grid-area: img-3;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .img-4 {
+        grid-area: img-4;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .img-5 {
+        grid-area: img-5;
+        margin: 20px;
+        display: flex;
         justify-content: center;
 
         img {
@@ -432,7 +629,12 @@
             "text-1"
             "img-1"
             "text-2"
-            "img-2";
+            "img-3"
+            "text-3"
+            "img-4"
+            "text-4"
+            "img-2"
+            "img-5";
     }
 
     .text-1 {
@@ -440,30 +642,94 @@
         display: flex;
         justify-content: center;
         margin: 20px;
+
+        h1 {
+            font-size: $h1-size-mobile;
+        }
     }
 
     .text-2 {
         grid-area: text-2;
         margin: 20px;
+
+        p {
+            font-size: $p-size-mobile;
+            text-align: justify;
+        }
+    }
+
+    .text-3 {
+        grid-area: text-3;
+        margin: 20px;
+
+        p {
+            font-size: $p-size-mobile;
+            text-align: justify;
+        }
+    }
+
+    .text-4 {
+        grid-area: text-4;
+        margin: 20px;
+
+        p {
+            font-size: $p-size-mobile;
+            text-align: justify;
+        }
     }
 
     .img-1 {
         grid-area: img-1;
         margin: 20px;
+        display: flex;
         justify-content: center;
 
         img {
-            width: 100%;
+            width: 50%;
         }
     }
 
     .img-2 {
         grid-area: img-2;
         margin: 20px;
+        display: flex;
         justify-content: center;
 
         img {
-            width: 100%;
+            width: 50%;
+        }
+    }
+
+    .img-3 {
+        grid-area: img-3;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 50%;
+        }
+    }
+
+    .img-4 {
+        grid-area: img-4;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 50%;
+        }
+    }
+
+    .img-5 {
+        grid-area: img-5;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 50%;
         }
     }
 }
@@ -473,9 +739,11 @@
     grid-template-areas:
         "title title title title"
         "paragraph paragraph paragraph paragraph"
-        "card-1 card-2 card-3 card-4"
+        "card-1 card-13 card-14 card-15"
+        "card-16 card-2 card-3 card-4"
         "card-5 card-6 card-7 card-8"
-        "card-9 card-10 card-11 card-12";
+        "card-9 card-10 card-11 card-12"
+    ;
 }
 
 .title {
@@ -483,16 +751,22 @@
     display: flex;
     justify-content: center;
     margin: 20px;
+
+    h1 {
+        font-size: $h1-size-desktop;
+    }
 }
 
 .paragraph {
     grid-area: paragraph;
     display: flex;
     justify-content: center;
+    font-size: $p-size-desktop;
     margin: 20px;
 }
 
 .card-1 {
+    grid-area: card-1;
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -541,7 +815,7 @@
                 text-align: center;
             }
 
-            p{
+            p {
                 font-size: $p-size-desktop;
                 text-align: center;
             }
@@ -558,6 +832,7 @@
 }
 
 .card-2 {
+    grid-area: card-2;
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -606,7 +881,7 @@
                 text-align: center;
             }
 
-            p{
+            p {
                 font-size: $p-size-desktop;
                 text-align: center;
             }
@@ -623,6 +898,7 @@
 }
 
 .card-3 {
+    grid-area: card-3;
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -671,7 +947,7 @@
                 text-align: center;
             }
 
-            p{
+            p {
                 font-size: $p-size-desktop;
                 text-align: center;
             }
@@ -688,6 +964,7 @@
 }
 
 .card-4 {
+    grid-area: card-4;
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -736,7 +1013,7 @@
                 text-align: center;
             }
 
-            p{
+            p {
                 font-size: $p-size-desktop;
                 text-align: center;
             }
@@ -753,6 +1030,7 @@
 }
 
 .card-5 {
+    grid-area: card-5;
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -801,7 +1079,7 @@
                 text-align: center;
             }
 
-            p{
+            p {
                 font-size: $p-size-desktop;
                 text-align: center;
             }
@@ -818,6 +1096,7 @@
 }
 
 .card-6 {
+    grid-area: card-6;
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -866,7 +1145,7 @@
                 text-align: center;
             }
 
-            p{
+            p {
                 font-size: $p-size-desktop;
                 text-align: center;
             }
@@ -883,6 +1162,7 @@
 }
 
 .card-7 {
+    grid-area: card-7;
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -931,7 +1211,7 @@
                 text-align: center;
             }
 
-            p{
+            p {
                 font-size: $p-size-desktop;
                 text-align: center;
             }
@@ -948,6 +1228,7 @@
 }
 
 .card-8 {
+    grid-area: card-8;
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -996,7 +1277,7 @@
                 text-align: center;
             }
 
-            p{
+            p {
                 font-size: $p-size-desktop;
                 text-align: center;
             }
@@ -1013,6 +1294,7 @@
 }
 
 .card-9 {
+    grid-area: card-9;
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -1061,7 +1343,7 @@
                 text-align: center;
             }
 
-            p{
+            p {
                 font-size: $p-size-desktop;
                 text-align: center;
             }
@@ -1078,6 +1360,7 @@
 }
 
 .card-10 {
+    grid-area: card-10;
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -1126,7 +1409,7 @@
                 text-align: center;
             }
 
-            p{
+            p {
                 font-size: $p-size-desktop;
                 text-align: center;
             }
@@ -1143,6 +1426,7 @@
 }
 
 .card-11 {
+    grid-area: card-11;
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -1191,7 +1475,7 @@
                 text-align: center;
             }
 
-            p{
+            p {
                 font-size: $p-size-desktop;
                 text-align: center;
             }
@@ -1208,6 +1492,7 @@
 }
 
 .card-12 {
+    grid-area: card-12;
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -1256,7 +1541,7 @@
                 text-align: center;
             }
 
-            p{
+            p {
                 font-size: $p-size-desktop;
                 text-align: center;
             }
@@ -1272,16 +1557,282 @@
     }
 }
 
+.card-13 {
+    grid-area: card-13;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+
+    .cardsub-13 {
+        position: relative;
+        width: 200px;
+        height: 300px;
+
+        .face-13 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: .5s;
+        }
+
+        .front-13 {
+            transform: perspective(600px) rotateY(0deg);
+            box-shadow: 0 5px 10px #000000;
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .back-13 {
+            transform: perspective(600px) rotateY(180deg);
+            background: #584b13;
+            padding: 15px;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0 5px 10px #000000;
+
+            h4 {
+                font-size: $h4-size-desktop;
+                margin-top: 5px;
+                text-align: center;
+            }
+
+            p {
+                font-size: $p-size-desktop;
+                text-align: center;
+            }
+        }
+
+        &:hover .front-13 {
+            transform: perspective(600px) rotateY(180deg);
+        }
+
+        &:hover .back-13 {
+            transform: perspective(600px) rotateY(360deg);
+        }
+    }
+}
+
+.card-14 {
+    grid-area: card-14;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+
+    .cardsub-14 {
+        position: relative;
+        width: 200px;
+        height: 300px;
+
+        .face-14 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: .5s;
+        }
+
+        .front-14 {
+            transform: perspective(600px) rotateY(0deg);
+            box-shadow: 0 5px 10px #000000;
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .back-14 {
+            transform: perspective(600px) rotateY(180deg);
+            background: #584b13;
+            padding: 15px;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0 5px 10px #000000;
+
+            h4 {
+                font-size: $h4-size-desktop;
+                margin-top: 5px;
+                text-align: center;
+            }
+
+            p {
+                font-size: $p-size-desktop;
+                text-align: center;
+            }
+        }
+
+        &:hover .front-14 {
+            transform: perspective(600px) rotateY(180deg);
+        }
+
+        &:hover .back-14 {
+            transform: perspective(600px) rotateY(360deg);
+        }
+    }
+}
+
+.card-15 {
+    grid-area: card-15;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+
+    .cardsub-15 {
+        position: relative;
+        width: 200px;
+        height: 300px;
+
+        .face-15 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: .5s;
+        }
+
+        .front-15 {
+            transform: perspective(600px) rotateY(0deg);
+            box-shadow: 0 5px 10px #000000;
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .back-15 {
+            transform: perspective(600px) rotateY(180deg);
+            background: #584b13;
+            padding: 15px;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0 5px 10px #000000;
+
+            h4 {
+                font-size: $h4-size-desktop;
+                margin-top: 5px;
+                text-align: center;
+            }
+
+            p {
+                font-size: $p-size-desktop;
+                text-align: center;
+            }
+        }
+
+        &:hover .front-15 {
+            transform: perspective(600px) rotateY(180deg);
+        }
+
+        &:hover .back-15 {
+            transform: perspective(600px) rotateY(360deg);
+        }
+    }
+}
+
+.card-16 {
+    grid-area: card-16;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+
+    .cardsub-16 {
+        position: relative;
+        width: 200px;
+        height: 300px;
+
+        .face-16 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: .5s;
+        }
+
+        .front-16 {
+            transform: perspective(600px) rotateY(0deg);
+            box-shadow: 0 5px 10px #000000;
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .back-16 {
+            transform: perspective(600px) rotateY(180deg);
+            background: #584b13;
+            padding: 15px;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0 5px 10px #000000;
+
+            h4 {
+                font-size: $h4-size-desktop;
+                margin-top: 5px;
+                text-align: center;
+            }
+
+            p {
+                font-size: $p-size-desktop;
+                text-align: center;
+            }
+        }
+
+        &:hover .front-16 {
+            transform: perspective(600px) rotateY(180deg);
+        }
+
+        &:hover .back-16 {
+            transform: perspective(600px) rotateY(360deg);
+        }
+    }
+}
+
 @media screen and (min-width:768px) and (max-width:1023px) {
     .grid-1 {
         display: grid;
         grid-template-areas:
             "title title title"
             "paragraph paragraph paragraph"
-            "card-1 card-2 card-3"
-            "card-4 card-5 card-6"
-            "card-7 card-8 card-9"
-            "card-10 card-11 card-12";
+            "card-1 card-13 card-14"
+            "card-15 card-16 card-2"
+            "card-3 card-4 card-5"
+            "card-6 card-7 card-8"
+            "card-9 card-10 card-11"
+            "card-12 none none";
     }
 
     .title {
@@ -1289,12 +1840,17 @@
         display: flex;
         justify-content: center;
         margin: 20px;
+
+        h1 {
+            font-size: $h1-size-desktop;
+        }
     }
 
     .paragraph {
         grid-area: paragraph;
         display: flex;
         justify-content: center;
+        font-size: $p-size-desktop;
         margin: 20px;
     }
 
@@ -1342,15 +1898,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: $h4-size-mobile;
+                    font-size: $h4-size-desktop;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-desktop;
+                    text-align: center;
+                }
             }
 
             &:hover .front-1 {
@@ -1407,15 +1963,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: $h4-size-mobile;
+                    font-size: $h4-size-desktop;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-desktop;
+                    text-align: center;
+                }
             }
 
             &:hover .front-2 {
@@ -1472,15 +2028,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: $h4-size-mobile;
+                    font-size: $h4-size-desktop;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-desktop;
+                    text-align: center;
+                }
             }
 
             &:hover .front-3 {
@@ -1537,15 +2093,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: $h4-size-mobile;
+                    font-size: $h4-size-desktop;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-desktop;
+                    text-align: center;
+                }
             }
 
             &:hover .front-4 {
@@ -1602,15 +2158,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: $h4-size-mobile;
+                    font-size: $h4-size-desktop;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-desktop;
+                    text-align: center;
+                }
             }
 
             &:hover .front-5 {
@@ -1667,15 +2223,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: $h4-size-mobile;
+                    font-size: $h4-size-desktop;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-desktop;
+                    text-align: center;
+                }
             }
 
             &:hover .front-6 {
@@ -1732,15 +2288,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: $h4-size-mobile;
+                    font-size: $h4-size-desktop;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-desktop;
+                    text-align: center;
+                }
             }
 
             &:hover .front-7 {
@@ -1797,15 +2353,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: $h4-size-mobile;
+                    font-size: $h4-size-desktop;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-desktop;
+                    text-align: center;
+                }
             }
 
             &:hover .front-8 {
@@ -1862,15 +2418,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: $h4-size-mobile;
+                    font-size: $h4-size-desktop;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-desktop;
+                    text-align: center;
+                }
             }
 
             &:hover .front-9 {
@@ -1927,15 +2483,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: $h4-size-mobile;
+                    font-size: $h4-size-desktop;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-desktop;
+                    text-align: center;
+                }
             }
 
             &:hover .front-10 {
@@ -1992,15 +2548,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: $h4-size-mobile;
+                    font-size: $h4-size-desktop;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-desktop;
+                    text-align: center;
+                }
             }
 
             &:hover .front-11 {
@@ -2057,15 +2613,15 @@
                 box-shadow: 0 5px 10px #000000;
 
                 h4 {
-                    font-size: $h4-size-mobile;
+                    font-size: $h4-size-desktop;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-desktop;
+                    text-align: center;
+                }
             }
 
             &:hover .front-12 {
@@ -2073,6 +2629,270 @@
             }
 
             &:hover .back-12 {
+                transform: perspective(600px) rotateY(360deg);
+            }
+        }
+    }
+
+    .card-13 {
+        grid-area: card-13;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+
+        .cardsub-13 {
+            position: relative;
+            width: 200px;
+            height: 300px;
+
+            .face-13 {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: .5s;
+            }
+
+            .front-13 {
+                transform: perspective(600px) rotateY(0deg);
+                box-shadow: 0 5px 10px #000000;
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .back-13 {
+                transform: perspective(600px) rotateY(180deg);
+                background: #584b13;
+                padding: 15px;
+                color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                box-shadow: 0 5px 10px #000000;
+
+                h4 {
+                    font-size: $h4-size-desktop;
+                    margin-top: 5px;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: $p-size-desktop;
+                    text-align: center;
+                }
+            }
+
+            &:hover .front-13 {
+                transform: perspective(600px) rotateY(180deg);
+            }
+
+            &:hover .back-13 {
+                transform: perspective(600px) rotateY(360deg);
+            }
+        }
+    }
+
+    .card-14 {
+        grid-area: card-14;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+
+        .cardsub-14 {
+            position: relative;
+            width: 200px;
+            height: 300px;
+
+            .face-14 {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: .5s;
+            }
+
+            .front-14 {
+                transform: perspective(600px) rotateY(0deg);
+                box-shadow: 0 5px 10px #000000;
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .back-14 {
+                transform: perspective(600px) rotateY(180deg);
+                background: #584b13;
+                padding: 15px;
+                color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                box-shadow: 0 5px 10px #000000;
+
+                h4 {
+                    font-size: $h4-size-desktop;
+                    margin-top: 5px;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: $p-size-desktop;
+                    text-align: center;
+                }
+            }
+
+            &:hover .front-14 {
+                transform: perspective(600px) rotateY(180deg);
+            }
+
+            &:hover .back-14 {
+                transform: perspective(600px) rotateY(360deg);
+            }
+        }
+    }
+
+    .card-15 {
+        grid-area: card-15;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+
+        .cardsub-15 {
+            position: relative;
+            width: 200px;
+            height: 300px;
+
+            .face-15 {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: .5s;
+            }
+
+            .front-15 {
+                transform: perspective(600px) rotateY(0deg);
+                box-shadow: 0 5px 10px #000000;
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .back-15 {
+                transform: perspective(600px) rotateY(180deg);
+                background: #584b13;
+                padding: 15px;
+                color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                box-shadow: 0 5px 10px #000000;
+
+                h4 {
+                    font-size: $h4-size-desktop;
+                    margin-top: 5px;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: $p-size-desktop;
+                    text-align: center;
+                }
+            }
+
+            &:hover .front-15 {
+                transform: perspective(600px) rotateY(180deg);
+            }
+
+            &:hover .back-15 {
+                transform: perspective(600px) rotateY(360deg);
+            }
+        }
+    }
+
+    .card-16 {
+        grid-area: card-16;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+
+        .cardsub-16 {
+            position: relative;
+            width: 200px;
+            height: 300px;
+
+            .face-16 {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: .5s;
+            }
+
+            .front-16 {
+                transform: perspective(600px) rotateY(0deg);
+                box-shadow: 0 5px 10px #000000;
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .back-16 {
+                transform: perspective(600px) rotateY(180deg);
+                background: #584b13;
+                padding: 15px;
+                color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                box-shadow: 0 5px 10px #000000;
+
+                h4 {
+                    font-size: $h4-size-desktop;
+                    margin-top: 5px;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: $p-size-desktop;
+                    text-align: center;
+                }
+            }
+
+            &:hover .front-16 {
+                transform: perspective(600px) rotateY(180deg);
+            }
+
+            &:hover .back-16 {
                 transform: perspective(600px) rotateY(360deg);
             }
         }
@@ -2085,7 +2905,9 @@
         grid-template-areas:
             "title title"
             "paragraph paragraph"
-            "card-1 card-2"
+            "card-1 card-13"
+            "card-14 card-15"
+            "card-16 card-2"
             "card-3 card-4"
             "card-5 card-6"
             "card-7 card-8"
@@ -2098,12 +2920,17 @@
         display: flex;
         justify-content: center;
         margin: 20px;
+
+        h1 {
+            font-size: $h1-size-mobile;
+        }
     }
 
     .paragraph {
         grid-area: paragraph;
         display: flex;
         justify-content: center;
+        font-size: $p-size-mobile;
         margin: 20px;
     }
 
@@ -2154,12 +2981,12 @@
                     font-size: $h4-size-mobile;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
             }
 
             &:hover .front-1 {
@@ -2219,12 +3046,12 @@
                     font-size: $h4-size-mobile;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
             }
 
             &:hover .front-2 {
@@ -2284,12 +3111,12 @@
                     font-size: $h4-size-mobile;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
             }
 
             &:hover .front-3 {
@@ -2349,12 +3176,12 @@
                     font-size: $h4-size-mobile;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
             }
 
             &:hover .front-4 {
@@ -2414,12 +3241,12 @@
                     font-size: $h4-size-mobile;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
             }
 
             &:hover .front-5 {
@@ -2479,12 +3306,12 @@
                     font-size: $h4-size-mobile;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
             }
 
             &:hover .front-6 {
@@ -2544,12 +3371,12 @@
                     font-size: $h4-size-mobile;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
             }
 
             &:hover .front-7 {
@@ -2609,12 +3436,12 @@
                     font-size: $h4-size-mobile;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
             }
 
             &:hover .front-8 {
@@ -2674,12 +3501,12 @@
                     font-size: $h4-size-mobile;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
             }
 
             &:hover .front-9 {
@@ -2739,12 +3566,12 @@
                     font-size: $h4-size-mobile;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
             }
 
             &:hover .front-10 {
@@ -2804,12 +3631,12 @@
                     font-size: $h4-size-mobile;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
             }
 
             &:hover .front-11 {
@@ -2869,12 +3696,12 @@
                     font-size: $h4-size-mobile;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
             }
 
             &:hover .front-12 {
@@ -2882,6 +3709,270 @@
             }
 
             &:hover .back-12 {
+                transform: perspective(600px) rotateY(360deg);
+            }
+        }
+    }
+
+    .card-13 {
+        grid-area: card-13;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+
+        .cardsub-13 {
+            position: relative;
+            width: 100px;
+            height: 200px;
+
+            .face-13 {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: .5s;
+            }
+
+            .front-13 {
+                transform: perspective(600px) rotateY(0deg);
+                box-shadow: 0 5px 10px #000000;
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .back-13 {
+                transform: perspective(600px) rotateY(180deg);
+                background: #584b13;
+                padding: 15px;
+                color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                box-shadow: 0 5px 10px #000000;
+
+                h4 {
+                    font-size: $h4-size-mobile;
+                    margin-top: 5px;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
+            }
+
+            &:hover .front-13 {
+                transform: perspective(600px) rotateY(180deg);
+            }
+
+            &:hover .back-13 {
+                transform: perspective(600px) rotateY(360deg);
+            }
+        }
+    }
+
+    .card-14 {
+        grid-area: card-14;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+
+        .cardsub-14 {
+            position: relative;
+            width: 100px;
+            height: 200px;
+
+            .face-14 {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: .5s;
+            }
+
+            .front-14 {
+                transform: perspective(600px) rotateY(0deg);
+                box-shadow: 0 5px 10px #000000;
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .back-14 {
+                transform: perspective(600px) rotateY(180deg);
+                background: #584b13;
+                padding: 15px;
+                color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                box-shadow: 0 5px 10px #000000;
+
+                h4 {
+                    font-size: $h4-size-mobile;
+                    margin-top: 5px;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
+            }
+
+            &:hover .front-14 {
+                transform: perspective(600px) rotateY(180deg);
+            }
+
+            &:hover .back-14 {
+                transform: perspective(600px) rotateY(360deg);
+            }
+        }
+    }
+
+    .card-15 {
+        grid-area: card-15;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+
+        .cardsub-15 {
+            position: relative;
+            width: 100px;
+            height: 200px;
+
+            .face-15 {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: .5s;
+            }
+
+            .front-15 {
+                transform: perspective(600px) rotateY(0deg);
+                box-shadow: 0 5px 10px #000000;
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .back-15 {
+                transform: perspective(600px) rotateY(180deg);
+                background: #584b13;
+                padding: 15px;
+                color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                box-shadow: 0 5px 10px #000000;
+
+                h4 {
+                    font-size: $h4-size-mobile;
+                    margin-top: 5px;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
+            }
+
+            &:hover .front-15 {
+                transform: perspective(600px) rotateY(180deg);
+            }
+
+            &:hover .back-15 {
+                transform: perspective(600px) rotateY(360deg);
+            }
+        }
+    }
+
+    .card-16 {
+        grid-area: card-16;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+
+        .cardsub-16 {
+            position: relative;
+            width: 100px;
+            height: 200px;
+
+            .face-16 {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: .5s;
+            }
+
+            .front-16 {
+                transform: perspective(600px) rotateY(0deg);
+                box-shadow: 0 5px 10px #000000;
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .back-16 {
+                transform: perspective(600px) rotateY(180deg);
+                background: #584b13;
+                padding: 15px;
+                color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                box-shadow: 0 5px 10px #000000;
+
+                h4 {
+                    font-size: $h4-size-mobile;
+                    margin-top: 5px;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
+            }
+
+            &:hover .front-16 {
+                transform: perspective(600px) rotateY(180deg);
+            }
+
+            &:hover .back-16 {
                 transform: perspective(600px) rotateY(360deg);
             }
         }
@@ -2908,12 +3999,17 @@
         justify-content: center;
         text-align: center;
         margin: 20px;
+
+        h1 {
+            font-size: $h1-size-mobile;
+        }
     }
 
     .paragraph {
         grid-area: paragraph;
         display: flex;
         justify-content: center;
+        font-size: $p-size-mobile;
         margin: 20px;
     }
 
@@ -2964,12 +4060,12 @@
                     font-size: $h4-size-mobile;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
             }
 
             &:hover .front-1 {
@@ -3029,12 +4125,12 @@
                     font-size: $h4-size-mobile;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
             }
 
             &:hover .front-2 {
@@ -3094,12 +4190,12 @@
                     font-size: $h4-size-mobile;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
             }
 
             &:hover .front-3 {
@@ -3159,12 +4255,12 @@
                     font-size: $h4-size-mobile;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
             }
 
             &:hover .front-4 {
@@ -3224,12 +4320,12 @@
                     font-size: $h4-size-mobile;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
             }
 
             &:hover .front-5 {
@@ -3289,12 +4385,12 @@
                     font-size: $h4-size-mobile;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
             }
 
             &:hover .front-6 {
@@ -3354,12 +4450,12 @@
                     font-size: $h4-size-mobile;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
             }
 
             &:hover .front-7 {
@@ -3419,12 +4515,12 @@
                     font-size: $h4-size-mobile;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
             }
 
             &:hover .front-8 {
@@ -3484,12 +4580,12 @@
                     font-size: $h4-size-mobile;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
             }
 
             &:hover .front-9 {
@@ -3549,12 +4645,12 @@
                     font-size: $h4-size-mobile;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
             }
 
             &:hover .front-10 {
@@ -3614,12 +4710,12 @@
                     font-size: $h4-size-mobile;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
             }
 
             &:hover .front-11 {
@@ -3679,12 +4775,12 @@
                     font-size: $h4-size-mobile;
                     margin-top: 5px;
                     text-align: center;
-            }
+                }
 
-            p{
-                font-size: $p-size-mobile;
-                text-align: center;
-            }
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
             }
 
             &:hover .front-12 {
@@ -3692,6 +4788,270 @@
             }
 
             &:hover .back-12 {
+                transform: perspective(600px) rotateY(360deg);
+            }
+        }
+    }
+
+    .card-13 {
+        grid-area: card-13;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+
+        .cardsub-13 {
+            position: relative;
+            width: 100px;
+            height: 200px;
+
+            .face-13 {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: .5s;
+            }
+
+            .front-13 {
+                transform: perspective(600px) rotateY(0deg);
+                box-shadow: 0 5px 10px #000000;
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .back-13 {
+                transform: perspective(600px) rotateY(180deg);
+                background: #584b13;
+                padding: 15px;
+                color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                box-shadow: 0 5px 10px #000000;
+
+                h4 {
+                    font-size: $h4-size-mobile;
+                    margin-top: 5px;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
+            }
+
+            &:hover .front-13 {
+                transform: perspective(600px) rotateY(180deg);
+            }
+
+            &:hover .back-13 {
+                transform: perspective(600px) rotateY(360deg);
+            }
+        }
+    }
+
+    .card-14 {
+        grid-area: card-14;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+
+        .cardsub-14 {
+            position: relative;
+            width: 100px;
+            height: 200px;
+
+            .face-14 {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: .5s;
+            }
+
+            .front-14 {
+                transform: perspective(600px) rotateY(0deg);
+                box-shadow: 0 5px 10px #000000;
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .back-14 {
+                transform: perspective(600px) rotateY(180deg);
+                background: #584b13;
+                padding: 15px;
+                color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                box-shadow: 0 5px 10px #000000;
+
+                h4 {
+                    font-size: $h4-size-mobile;
+                    margin-top: 5px;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
+            }
+
+            &:hover .front-14 {
+                transform: perspective(600px) rotateY(180deg);
+            }
+
+            &:hover .back-14 {
+                transform: perspective(600px) rotateY(360deg);
+            }
+        }
+    }
+
+    .card-15 {
+        grid-area: card-15;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+
+        .cardsub-15 {
+            position: relative;
+            width: 100px;
+            height: 200px;
+
+            .face-15 {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: .5s;
+            }
+
+            .front-15 {
+                transform: perspective(600px) rotateY(0deg);
+                box-shadow: 0 5px 10px #000000;
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .back-15 {
+                transform: perspective(600px) rotateY(180deg);
+                background: #584b13;
+                padding: 15px;
+                color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                box-shadow: 0 5px 10px #000000;
+
+                h4 {
+                    font-size: $h4-size-mobile;
+                    margin-top: 5px;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
+            }
+
+            &:hover .front-15 {
+                transform: perspective(600px) rotateY(180deg);
+            }
+
+            &:hover .back-15 {
+                transform: perspective(600px) rotateY(360deg);
+            }
+        }
+    }
+
+    .card-16 {
+        grid-area: card-16;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+
+        .cardsub-16 {
+            position: relative;
+            width: 100px;
+            height: 200px;
+
+            .face-16 {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: .5s;
+            }
+
+            .front-16 {
+                transform: perspective(600px) rotateY(0deg);
+                box-shadow: 0 5px 10px #000000;
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .back-16 {
+                transform: perspective(600px) rotateY(180deg);
+                background: #584b13;
+                padding: 15px;
+                color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                box-shadow: 0 5px 10px #000000;
+
+                h4 {
+                    font-size: $h4-size-mobile;
+                    margin-top: 5px;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: $p-size-mobile;
+                    text-align: center;
+                }
+            }
+
+            &:hover .front-16 {
+                transform: perspective(600px) rotateY(180deg);
+            }
+
+            &:hover .back-16 {
                 transform: perspective(600px) rotateY(360deg);
             }
         }

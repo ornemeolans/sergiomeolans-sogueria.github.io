@@ -4,16 +4,44 @@
   font-family: "Rubik", sans-serif;
   font-size: 20px; }
 
-footer {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 35px;
-  background-color: #e8e7e6; }
-  footer img {
-    height: 30px; }
+@media screen and (min-width: 1024px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #e8e7e6; }
+    footer img {
+      height: 30px; } }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    background-color: #e8e7e6; }
+    footer img {
+      height: 25px; } }
+
+@media screen and (max-width: 767px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #e8e7e6; }
+    footer img {
+      height: 20px; } }
 
 header {
   background-color: #5e5e5e;
@@ -162,17 +190,47 @@ body {
         height: 50%;
         margin: 15px 0px; } }
 
-.pages-banner {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .pages-banner h1 {
-    margin: 15px 0px;
-    font-size: 40px;
-    font-style: bold; }
-  .pages-banner p {
-    margin: 5px 0px;
-    font-size: 16px; }
+@media screen and (min-width: 1024px) {
+  .pages-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .pages-banner h1 {
+      margin: 15px 0px;
+      font-size: 40px;
+      font-style: bold; }
+    .pages-banner p {
+      margin: 5px 0px;
+      font-size: 16px;
+      text-align: center; } }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .pages-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .pages-banner h1 {
+      margin: 10px 0px;
+      font-size: 40px;
+      font-style: bold; }
+    .pages-banner p {
+      margin: 4px 0px;
+      font-size: 16px;
+      text-align: center; } }
+
+@media screen and (max-width: 767px) {
+  .pages-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .pages-banner h1 {
+      margin: 5px 0px;
+      font-size: 20px;
+      font-style: bold; }
+    .pages-banner p {
+      margin: 2px 0px;
+      font-size: 7px;
+      text-align: justify; } }
 
 @media screen and (min-width: 1024px) {
   .contact {
@@ -199,11 +257,18 @@ body {
           display: flex;
           flex-direction: row;
           height: 30px; }
-      .contact .contact-date iframe {
+      .contact .contact-date .embed {
+        position: relative;
         width: 400px;
-        height: 200px;
-        margin-top: 25px;
-        margin-left: 20px; } }
+        height: 300px;
+        overflow: hidden;
+        margin-left: 20px; }
+        .contact .contact-date .embed iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%; } }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .contact {
@@ -234,11 +299,18 @@ body {
           display: flex;
           flex-direction: row;
           height: 20px; }
-      .contact .contact-date iframe {
-        width: 300px;
-        height: 100px;
-        margin-top: 15px;
-        margin-left: 10px; } }
+      .contact .contact-date .embed {
+        position: relative;
+        width: 400px;
+        height: 300px;
+        overflow: hidden;
+        margin-left: 15px; }
+        .contact .contact-date .embed iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%; } }
 
 @media screen and (max-width: 767px) {
   .contact {
@@ -267,28 +339,55 @@ body {
           display: flex;
           flex-direction: row;
           height: 30px; }
-      .contact .contact-date iframe {
-        width: 400px;
+      .contact .contact-date .embed {
+        position: relative;
+        width: 300px;
         height: 200px;
-        margin-top: 25px; } }
+        overflow: hidden; }
+        .contact .contact-date .embed iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%; } }
 
 .grid {
   display: grid;
-  grid-template-areas: "text-1 text-1 text-1" "text-2 text-2 img-1" "img-2 img-2 none"; }
+  grid-template-areas: "text-1 text-1 text-1" "img-1 text-2 img-3" "img-4 img-2 text-3" "text-4 img-5 none"; }
 
 .text-1 {
   grid-area: text-1;
   display: flex;
   justify-content: center;
   margin: 20px; }
+  .text-1 h1 {
+    font-size: 40px; }
 
 .text-2 {
   grid-area: text-2;
   margin: 20px; }
+  .text-2 p {
+    font-size: 16px;
+    text-align: justify; }
+
+.text-3 {
+  grid-area: text-3;
+  margin: 20px; }
+  .text-3 p {
+    font-size: 16px;
+    text-align: justify; }
+
+.text-4 {
+  grid-area: text-4;
+  margin: 20px; }
+  .text-4 p {
+    font-size: 16px;
+    text-align: justify; }
 
 .img-1 {
   grid-area: img-1;
   margin: 20px;
+  display: flex;
   justify-content: center; }
   .img-1 img {
     width: 100%; }
@@ -296,77 +395,186 @@ body {
 .img-2 {
   grid-area: img-2;
   margin: 20px;
+  display: flex;
   justify-content: center; }
   .img-2 img {
+    width: 100%; }
+
+.img-3 {
+  grid-area: img-3;
+  margin: 20px;
+  display: flex;
+  justify-content: center; }
+  .img-3 img {
+    width: 100%; }
+
+.img-4 {
+  grid-area: img-4;
+  margin: 20px;
+  display: flex;
+  justify-content: center; }
+  .img-4 img {
+    width: 100%; }
+
+.img-5 {
+  grid-area: img-5;
+  margin: 20px;
+  display: flex;
+  justify-content: center; }
+  .img-5 img {
     width: 100%; }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .grid {
     display: grid;
-    grid-template-areas: "text-1 text-1" "text-2 img-1" "img-2 none"; }
+    grid-template-areas: "text-1 text-1" "img-1 text-2" "img-3 img-4" "text-3 img-2" "text-4 img-5"; }
   .text-1 {
     grid-area: text-1;
     display: flex;
     justify-content: center;
     margin: 20px; }
+    .text-1 h1 {
+      font-size: 40px; }
   .text-2 {
     grid-area: text-2;
     margin: 20px; }
+    .text-2 p {
+      font-size: 16px;
+      text-align: justify; }
+  .text-3 {
+    grid-area: text-3;
+    margin: 20px; }
+    .text-3 p {
+      font-size: 16px;
+      text-align: justify; }
+  .text-4 {
+    grid-area: text-4;
+    margin: 20px; }
+    .text-4 p {
+      font-size: 16px;
+      text-align: justify; }
   .img-1 {
     grid-area: img-1;
     margin: 20px;
+    display: flex;
     justify-content: center; }
     .img-1 img {
       width: 100%; }
   .img-2 {
     grid-area: img-2;
     margin: 20px;
+    display: flex;
     justify-content: center; }
     .img-2 img {
+      width: 100%; }
+  .img-3 {
+    grid-area: img-3;
+    margin: 20px;
+    display: flex;
+    justify-content: center; }
+    .img-3 img {
+      width: 100%; }
+  .img-4 {
+    grid-area: img-4;
+    margin: 20px;
+    display: flex;
+    justify-content: center; }
+    .img-4 img {
+      width: 100%; }
+  .img-5 {
+    grid-area: img-5;
+    margin: 20px;
+    display: flex;
+    justify-content: center; }
+    .img-5 img {
       width: 100%; } }
 
 @media screen and (max-width: 767px) {
   .grid {
     display: grid;
-    grid-template-areas: "text-1" "img-1" "text-2" "img-2"; }
+    grid-template-areas: "text-1" "img-1" "text-2" "img-3" "text-3" "img-4" "text-4" "img-2" "img-5"; }
   .text-1 {
     grid-area: text-1;
     display: flex;
     justify-content: center;
     margin: 20px; }
+    .text-1 h1 {
+      font-size: 20px; }
   .text-2 {
     grid-area: text-2;
     margin: 20px; }
+    .text-2 p {
+      font-size: 7px;
+      text-align: justify; }
+  .text-3 {
+    grid-area: text-3;
+    margin: 20px; }
+    .text-3 p {
+      font-size: 7px;
+      text-align: justify; }
+  .text-4 {
+    grid-area: text-4;
+    margin: 20px; }
+    .text-4 p {
+      font-size: 7px;
+      text-align: justify; }
   .img-1 {
     grid-area: img-1;
     margin: 20px;
+    display: flex;
     justify-content: center; }
     .img-1 img {
-      width: 100%; }
+      width: 50%; }
   .img-2 {
     grid-area: img-2;
     margin: 20px;
+    display: flex;
     justify-content: center; }
     .img-2 img {
-      width: 100%; } }
+      width: 50%; }
+  .img-3 {
+    grid-area: img-3;
+    margin: 20px;
+    display: flex;
+    justify-content: center; }
+    .img-3 img {
+      width: 50%; }
+  .img-4 {
+    grid-area: img-4;
+    margin: 20px;
+    display: flex;
+    justify-content: center; }
+    .img-4 img {
+      width: 50%; }
+  .img-5 {
+    grid-area: img-5;
+    margin: 20px;
+    display: flex;
+    justify-content: center; }
+    .img-5 img {
+      width: 50%; } }
 
 .grid-1 {
   display: grid;
-  grid-template-areas: "title title title title" "paragraph paragraph paragraph paragraph" "card-1 card-2 card-3 card-4" "card-5 card-6 card-7 card-8" "card-9 card-10 card-11 card-12"; }
+  grid-template-areas: "title title title title" "paragraph paragraph paragraph paragraph" "card-1 card-13 card-14 card-15" "card-16 card-2 card-3 card-4" "card-5 card-6 card-7 card-8" "card-9 card-10 card-11 card-12"; }
 
 .title {
   grid-area: title;
   display: flex;
   justify-content: center;
   margin: 20px; }
+  .title h1 {
+    font-size: 40px; }
 
 .paragraph {
   grid-area: paragraph;
   display: flex;
   justify-content: center;
+  font-size: 16px;
   margin: 20px; }
 
 .card-1 {
+  grid-area: card-1;
   margin: 20px;
   display: flex;
   justify-content: center; }
@@ -413,6 +621,7 @@ body {
       transform: perspective(600px) rotateY(360deg); }
 
 .card-2 {
+  grid-area: card-2;
   margin: 20px;
   display: flex;
   justify-content: center; }
@@ -459,6 +668,7 @@ body {
       transform: perspective(600px) rotateY(360deg); }
 
 .card-3 {
+  grid-area: card-3;
   margin: 20px;
   display: flex;
   justify-content: center; }
@@ -505,6 +715,7 @@ body {
       transform: perspective(600px) rotateY(360deg); }
 
 .card-4 {
+  grid-area: card-4;
   margin: 20px;
   display: flex;
   justify-content: center; }
@@ -551,6 +762,7 @@ body {
       transform: perspective(600px) rotateY(360deg); }
 
 .card-5 {
+  grid-area: card-5;
   margin: 20px;
   display: flex;
   justify-content: center; }
@@ -597,6 +809,7 @@ body {
       transform: perspective(600px) rotateY(360deg); }
 
 .card-6 {
+  grid-area: card-6;
   margin: 20px;
   display: flex;
   justify-content: center; }
@@ -643,6 +856,7 @@ body {
       transform: perspective(600px) rotateY(360deg); }
 
 .card-7 {
+  grid-area: card-7;
   margin: 20px;
   display: flex;
   justify-content: center; }
@@ -689,6 +903,7 @@ body {
       transform: perspective(600px) rotateY(360deg); }
 
 .card-8 {
+  grid-area: card-8;
   margin: 20px;
   display: flex;
   justify-content: center; }
@@ -735,6 +950,7 @@ body {
       transform: perspective(600px) rotateY(360deg); }
 
 .card-9 {
+  grid-area: card-9;
   margin: 20px;
   display: flex;
   justify-content: center; }
@@ -781,6 +997,7 @@ body {
       transform: perspective(600px) rotateY(360deg); }
 
 .card-10 {
+  grid-area: card-10;
   margin: 20px;
   display: flex;
   justify-content: center; }
@@ -827,6 +1044,7 @@ body {
       transform: perspective(600px) rotateY(360deg); }
 
 .card-11 {
+  grid-area: card-11;
   margin: 20px;
   display: flex;
   justify-content: center; }
@@ -873,6 +1091,7 @@ body {
       transform: perspective(600px) rotateY(360deg); }
 
 .card-12 {
+  grid-area: card-12;
   margin: 20px;
   display: flex;
   justify-content: center; }
@@ -918,19 +1137,210 @@ body {
     .card-12 .cardsub-12:hover .back-12 {
       transform: perspective(600px) rotateY(360deg); }
 
+.card-13 {
+  grid-area: card-13;
+  margin: 20px;
+  display: flex;
+  justify-content: center; }
+  .card-13 .cardsub-13 {
+    position: relative;
+    width: 200px;
+    height: 300px; }
+    .card-13 .cardsub-13 .face-13 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: .5s; }
+    .card-13 .cardsub-13 .front-13 {
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px 10px #000000; }
+      .card-13 .cardsub-13 .front-13 img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .card-13 .cardsub-13 .back-13 {
+      transform: perspective(600px) rotateY(180deg);
+      background: #584b13;
+      padding: 15px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 5px 10px #000000; }
+      .card-13 .cardsub-13 .back-13 h4 {
+        font-size: 20px;
+        margin-top: 5px;
+        text-align: center; }
+      .card-13 .cardsub-13 .back-13 p {
+        font-size: 16px;
+        text-align: center; }
+    .card-13 .cardsub-13:hover .front-13 {
+      transform: perspective(600px) rotateY(180deg); }
+    .card-13 .cardsub-13:hover .back-13 {
+      transform: perspective(600px) rotateY(360deg); }
+
+.card-14 {
+  grid-area: card-14;
+  margin: 20px;
+  display: flex;
+  justify-content: center; }
+  .card-14 .cardsub-14 {
+    position: relative;
+    width: 200px;
+    height: 300px; }
+    .card-14 .cardsub-14 .face-14 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: .5s; }
+    .card-14 .cardsub-14 .front-14 {
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px 10px #000000; }
+      .card-14 .cardsub-14 .front-14 img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .card-14 .cardsub-14 .back-14 {
+      transform: perspective(600px) rotateY(180deg);
+      background: #584b13;
+      padding: 15px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 5px 10px #000000; }
+      .card-14 .cardsub-14 .back-14 h4 {
+        font-size: 20px;
+        margin-top: 5px;
+        text-align: center; }
+      .card-14 .cardsub-14 .back-14 p {
+        font-size: 16px;
+        text-align: center; }
+    .card-14 .cardsub-14:hover .front-14 {
+      transform: perspective(600px) rotateY(180deg); }
+    .card-14 .cardsub-14:hover .back-14 {
+      transform: perspective(600px) rotateY(360deg); }
+
+.card-15 {
+  grid-area: card-15;
+  margin: 20px;
+  display: flex;
+  justify-content: center; }
+  .card-15 .cardsub-15 {
+    position: relative;
+    width: 200px;
+    height: 300px; }
+    .card-15 .cardsub-15 .face-15 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: .5s; }
+    .card-15 .cardsub-15 .front-15 {
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px 10px #000000; }
+      .card-15 .cardsub-15 .front-15 img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .card-15 .cardsub-15 .back-15 {
+      transform: perspective(600px) rotateY(180deg);
+      background: #584b13;
+      padding: 15px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 5px 10px #000000; }
+      .card-15 .cardsub-15 .back-15 h4 {
+        font-size: 20px;
+        margin-top: 5px;
+        text-align: center; }
+      .card-15 .cardsub-15 .back-15 p {
+        font-size: 16px;
+        text-align: center; }
+    .card-15 .cardsub-15:hover .front-15 {
+      transform: perspective(600px) rotateY(180deg); }
+    .card-15 .cardsub-15:hover .back-15 {
+      transform: perspective(600px) rotateY(360deg); }
+
+.card-16 {
+  grid-area: card-16;
+  margin: 20px;
+  display: flex;
+  justify-content: center; }
+  .card-16 .cardsub-16 {
+    position: relative;
+    width: 200px;
+    height: 300px; }
+    .card-16 .cardsub-16 .face-16 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: .5s; }
+    .card-16 .cardsub-16 .front-16 {
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px 10px #000000; }
+      .card-16 .cardsub-16 .front-16 img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .card-16 .cardsub-16 .back-16 {
+      transform: perspective(600px) rotateY(180deg);
+      background: #584b13;
+      padding: 15px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 5px 10px #000000; }
+      .card-16 .cardsub-16 .back-16 h4 {
+        font-size: 20px;
+        margin-top: 5px;
+        text-align: center; }
+      .card-16 .cardsub-16 .back-16 p {
+        font-size: 16px;
+        text-align: center; }
+    .card-16 .cardsub-16:hover .front-16 {
+      transform: perspective(600px) rotateY(180deg); }
+    .card-16 .cardsub-16:hover .back-16 {
+      transform: perspective(600px) rotateY(360deg); }
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .grid-1 {
     display: grid;
-    grid-template-areas: "title title title" "paragraph paragraph paragraph" "card-1 card-2 card-3" "card-4 card-5 card-6" "card-7 card-8 card-9" "card-10 card-11 card-12"; }
+    grid-template-areas: "title title title" "paragraph paragraph paragraph" "card-1 card-13 card-14" "card-15 card-16 card-2" "card-3 card-4 card-5" "card-6 card-7 card-8" "card-9 card-10 card-11" "card-12 none none"; }
   .title {
     grid-area: title;
     display: flex;
     justify-content: center;
     margin: 20px; }
+    .title h1 {
+      font-size: 40px; }
   .paragraph {
     grid-area: paragraph;
     display: flex;
     justify-content: center;
+    font-size: 16px;
     margin: 20px; }
   .card-1 {
     margin: 20px;
@@ -967,11 +1377,11 @@ body {
         text-align: center;
         box-shadow: 0 5px 10px #000000; }
         .card-1 .cardsub-1 .back-1 h4 {
-          font-size: 10px;
+          font-size: 20px;
           margin-top: 5px;
           text-align: center; }
         .card-1 .cardsub-1 .back-1 p {
-          font-size: 7px;
+          font-size: 16px;
           text-align: center; }
       .card-1 .cardsub-1:hover .front-1 {
         transform: perspective(600px) rotateY(180deg); }
@@ -1012,11 +1422,11 @@ body {
         text-align: center;
         box-shadow: 0 5px 10px #000000; }
         .card-2 .cardsub-2 .back-2 h4 {
-          font-size: 10px;
+          font-size: 20px;
           margin-top: 5px;
           text-align: center; }
         .card-2 .cardsub-2 .back-2 p {
-          font-size: 7px;
+          font-size: 16px;
           text-align: center; }
       .card-2 .cardsub-2:hover .front-2 {
         transform: perspective(600px) rotateY(180deg); }
@@ -1057,11 +1467,11 @@ body {
         text-align: center;
         box-shadow: 0 5px 10px #000000; }
         .card-3 .cardsub-3 .back-3 h4 {
-          font-size: 10px;
+          font-size: 20px;
           margin-top: 5px;
           text-align: center; }
         .card-3 .cardsub-3 .back-3 p {
-          font-size: 7px;
+          font-size: 16px;
           text-align: center; }
       .card-3 .cardsub-3:hover .front-3 {
         transform: perspective(600px) rotateY(180deg); }
@@ -1102,11 +1512,11 @@ body {
         text-align: center;
         box-shadow: 0 5px 10px #000000; }
         .card-4 .cardsub-4 .back-4 h4 {
-          font-size: 10px;
+          font-size: 20px;
           margin-top: 5px;
           text-align: center; }
         .card-4 .cardsub-4 .back-4 p {
-          font-size: 7px;
+          font-size: 16px;
           text-align: center; }
       .card-4 .cardsub-4:hover .front-4 {
         transform: perspective(600px) rotateY(180deg); }
@@ -1147,11 +1557,11 @@ body {
         text-align: center;
         box-shadow: 0 5px 10px #000000; }
         .card-5 .cardsub-5 .back-5 h4 {
-          font-size: 10px;
+          font-size: 20px;
           margin-top: 5px;
           text-align: center; }
         .card-5 .cardsub-5 .back-5 p {
-          font-size: 7px;
+          font-size: 16px;
           text-align: center; }
       .card-5 .cardsub-5:hover .front-5 {
         transform: perspective(600px) rotateY(180deg); }
@@ -1192,11 +1602,11 @@ body {
         text-align: center;
         box-shadow: 0 5px 10px #000000; }
         .card-6 .cardsub-6 .back-6 h4 {
-          font-size: 10px;
+          font-size: 20px;
           margin-top: 5px;
           text-align: center; }
         .card-6 .cardsub-6 .back-6 p {
-          font-size: 7px;
+          font-size: 16px;
           text-align: center; }
       .card-6 .cardsub-6:hover .front-6 {
         transform: perspective(600px) rotateY(180deg); }
@@ -1237,11 +1647,11 @@ body {
         text-align: center;
         box-shadow: 0 5px 10px #000000; }
         .card-7 .cardsub-7 .back-7 h4 {
-          font-size: 10px;
+          font-size: 20px;
           margin-top: 5px;
           text-align: center; }
         .card-7 .cardsub-7 .back-7 p {
-          font-size: 7px;
+          font-size: 16px;
           text-align: center; }
       .card-7 .cardsub-7:hover .front-7 {
         transform: perspective(600px) rotateY(180deg); }
@@ -1282,11 +1692,11 @@ body {
         text-align: center;
         box-shadow: 0 5px 10px #000000; }
         .card-8 .cardsub-8 .back-8 h4 {
-          font-size: 10px;
+          font-size: 20px;
           margin-top: 5px;
           text-align: center; }
         .card-8 .cardsub-8 .back-8 p {
-          font-size: 7px;
+          font-size: 16px;
           text-align: center; }
       .card-8 .cardsub-8:hover .front-8 {
         transform: perspective(600px) rotateY(180deg); }
@@ -1327,11 +1737,11 @@ body {
         text-align: center;
         box-shadow: 0 5px 10px #000000; }
         .card-9 .cardsub-9 .back-9 h4 {
-          font-size: 10px;
+          font-size: 20px;
           margin-top: 5px;
           text-align: center; }
         .card-9 .cardsub-9 .back-9 p {
-          font-size: 7px;
+          font-size: 16px;
           text-align: center; }
       .card-9 .cardsub-9:hover .front-9 {
         transform: perspective(600px) rotateY(180deg); }
@@ -1372,11 +1782,11 @@ body {
         text-align: center;
         box-shadow: 0 5px 10px #000000; }
         .card-10 .cardsub-10 .back-10 h4 {
-          font-size: 10px;
+          font-size: 20px;
           margin-top: 5px;
           text-align: center; }
         .card-10 .cardsub-10 .back-10 p {
-          font-size: 7px;
+          font-size: 16px;
           text-align: center; }
       .card-10 .cardsub-10:hover .front-10 {
         transform: perspective(600px) rotateY(180deg); }
@@ -1417,11 +1827,11 @@ body {
         text-align: center;
         box-shadow: 0 5px 10px #000000; }
         .card-11 .cardsub-11 .back-11 h4 {
-          font-size: 10px;
+          font-size: 20px;
           margin-top: 5px;
           text-align: center; }
         .card-11 .cardsub-11 .back-11 p {
-          font-size: 7px;
+          font-size: 16px;
           text-align: center; }
       .card-11 .cardsub-11:hover .front-11 {
         transform: perspective(600px) rotateY(180deg); }
@@ -1462,30 +1872,217 @@ body {
         text-align: center;
         box-shadow: 0 5px 10px #000000; }
         .card-12 .cardsub-12 .back-12 h4 {
-          font-size: 10px;
+          font-size: 20px;
           margin-top: 5px;
           text-align: center; }
         .card-12 .cardsub-12 .back-12 p {
-          font-size: 7px;
+          font-size: 16px;
           text-align: center; }
       .card-12 .cardsub-12:hover .front-12 {
         transform: perspective(600px) rotateY(180deg); }
       .card-12 .cardsub-12:hover .back-12 {
+        transform: perspective(600px) rotateY(360deg); }
+  .card-13 {
+    grid-area: card-13;
+    margin: 20px;
+    display: flex;
+    justify-content: center; }
+    .card-13 .cardsub-13 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-13 .cardsub-13 .face-13 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-13 .cardsub-13 .front-13 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-13 .cardsub-13 .front-13 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-13 .cardsub-13 .back-13 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-13 .cardsub-13 .back-13 h4 {
+          font-size: 20px;
+          margin-top: 5px;
+          text-align: center; }
+        .card-13 .cardsub-13 .back-13 p {
+          font-size: 16px;
+          text-align: center; }
+      .card-13 .cardsub-13:hover .front-13 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-13 .cardsub-13:hover .back-13 {
+        transform: perspective(600px) rotateY(360deg); }
+  .card-14 {
+    grid-area: card-14;
+    margin: 20px;
+    display: flex;
+    justify-content: center; }
+    .card-14 .cardsub-14 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-14 .cardsub-14 .face-14 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-14 .cardsub-14 .front-14 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-14 .cardsub-14 .front-14 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-14 .cardsub-14 .back-14 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-14 .cardsub-14 .back-14 h4 {
+          font-size: 20px;
+          margin-top: 5px;
+          text-align: center; }
+        .card-14 .cardsub-14 .back-14 p {
+          font-size: 16px;
+          text-align: center; }
+      .card-14 .cardsub-14:hover .front-14 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-14 .cardsub-14:hover .back-14 {
+        transform: perspective(600px) rotateY(360deg); }
+  .card-15 {
+    grid-area: card-15;
+    margin: 20px;
+    display: flex;
+    justify-content: center; }
+    .card-15 .cardsub-15 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-15 .cardsub-15 .face-15 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-15 .cardsub-15 .front-15 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-15 .cardsub-15 .front-15 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-15 .cardsub-15 .back-15 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-15 .cardsub-15 .back-15 h4 {
+          font-size: 20px;
+          margin-top: 5px;
+          text-align: center; }
+        .card-15 .cardsub-15 .back-15 p {
+          font-size: 16px;
+          text-align: center; }
+      .card-15 .cardsub-15:hover .front-15 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-15 .cardsub-15:hover .back-15 {
+        transform: perspective(600px) rotateY(360deg); }
+  .card-16 {
+    grid-area: card-16;
+    margin: 20px;
+    display: flex;
+    justify-content: center; }
+    .card-16 .cardsub-16 {
+      position: relative;
+      width: 200px;
+      height: 300px; }
+      .card-16 .cardsub-16 .face-16 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-16 .cardsub-16 .front-16 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-16 .cardsub-16 .front-16 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-16 .cardsub-16 .back-16 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-16 .cardsub-16 .back-16 h4 {
+          font-size: 20px;
+          margin-top: 5px;
+          text-align: center; }
+        .card-16 .cardsub-16 .back-16 p {
+          font-size: 16px;
+          text-align: center; }
+      .card-16 .cardsub-16:hover .front-16 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-16 .cardsub-16:hover .back-16 {
         transform: perspective(600px) rotateY(360deg); } }
 
 @media screen and (min-width: 465px) and (max-width: 767px) {
   .grid-1 {
     display: grid;
-    grid-template-areas: "title title" "paragraph paragraph" "card-1 card-2" "card-3 card-4" "card-5 card-6" "card-7 card-8" "card-9 card-10" "card-11 card-12"; }
+    grid-template-areas: "title title" "paragraph paragraph" "card-1 card-13" "card-14 card-15" "card-16 card-2" "card-3 card-4" "card-5 card-6" "card-7 card-8" "card-9 card-10" "card-11 card-12"; }
   .title {
     grid-area: title;
     display: flex;
     justify-content: center;
     margin: 20px; }
+    .title h1 {
+      font-size: 20px; }
   .paragraph {
     grid-area: paragraph;
     display: flex;
     justify-content: center;
+    font-size: 7px;
     margin: 20px; }
   .card-1 {
     margin: 20px;
@@ -2026,6 +2623,190 @@ body {
       .card-12 .cardsub-12:hover .front-12 {
         transform: perspective(600px) rotateY(180deg); }
       .card-12 .cardsub-12:hover .back-12 {
+        transform: perspective(600px) rotateY(360deg); }
+  .card-13 {
+    grid-area: card-13;
+    margin: 20px;
+    display: flex;
+    justify-content: center; }
+    .card-13 .cardsub-13 {
+      position: relative;
+      width: 100px;
+      height: 200px; }
+      .card-13 .cardsub-13 .face-13 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-13 .cardsub-13 .front-13 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-13 .cardsub-13 .front-13 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-13 .cardsub-13 .back-13 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-13 .cardsub-13 .back-13 h4 {
+          font-size: 10px;
+          margin-top: 5px;
+          text-align: center; }
+        .card-13 .cardsub-13 .back-13 p {
+          font-size: 7px;
+          text-align: center; }
+      .card-13 .cardsub-13:hover .front-13 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-13 .cardsub-13:hover .back-13 {
+        transform: perspective(600px) rotateY(360deg); }
+  .card-14 {
+    grid-area: card-14;
+    margin: 20px;
+    display: flex;
+    justify-content: center; }
+    .card-14 .cardsub-14 {
+      position: relative;
+      width: 100px;
+      height: 200px; }
+      .card-14 .cardsub-14 .face-14 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-14 .cardsub-14 .front-14 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-14 .cardsub-14 .front-14 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-14 .cardsub-14 .back-14 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-14 .cardsub-14 .back-14 h4 {
+          font-size: 10px;
+          margin-top: 5px;
+          text-align: center; }
+        .card-14 .cardsub-14 .back-14 p {
+          font-size: 7px;
+          text-align: center; }
+      .card-14 .cardsub-14:hover .front-14 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-14 .cardsub-14:hover .back-14 {
+        transform: perspective(600px) rotateY(360deg); }
+  .card-15 {
+    grid-area: card-15;
+    margin: 20px;
+    display: flex;
+    justify-content: center; }
+    .card-15 .cardsub-15 {
+      position: relative;
+      width: 100px;
+      height: 200px; }
+      .card-15 .cardsub-15 .face-15 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-15 .cardsub-15 .front-15 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-15 .cardsub-15 .front-15 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-15 .cardsub-15 .back-15 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-15 .cardsub-15 .back-15 h4 {
+          font-size: 10px;
+          margin-top: 5px;
+          text-align: center; }
+        .card-15 .cardsub-15 .back-15 p {
+          font-size: 7px;
+          text-align: center; }
+      .card-15 .cardsub-15:hover .front-15 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-15 .cardsub-15:hover .back-15 {
+        transform: perspective(600px) rotateY(360deg); }
+  .card-16 {
+    grid-area: card-16;
+    margin: 20px;
+    display: flex;
+    justify-content: center; }
+    .card-16 .cardsub-16 {
+      position: relative;
+      width: 100px;
+      height: 200px; }
+      .card-16 .cardsub-16 .face-16 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-16 .cardsub-16 .front-16 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-16 .cardsub-16 .front-16 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-16 .cardsub-16 .back-16 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-16 .cardsub-16 .back-16 h4 {
+          font-size: 10px;
+          margin-top: 5px;
+          text-align: center; }
+        .card-16 .cardsub-16 .back-16 p {
+          font-size: 7px;
+          text-align: center; }
+      .card-16 .cardsub-16:hover .front-16 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-16 .cardsub-16:hover .back-16 {
         transform: perspective(600px) rotateY(360deg); } }
 
 @media screen and (max-width: 464px) {
@@ -2038,10 +2819,13 @@ body {
     justify-content: center;
     text-align: center;
     margin: 20px; }
+    .title h1 {
+      font-size: 20px; }
   .paragraph {
     grid-area: paragraph;
     display: flex;
     justify-content: center;
+    font-size: 7px;
     margin: 20px; }
   .card-1 {
     margin: 20px;
@@ -2582,6 +3366,190 @@ body {
       .card-12 .cardsub-12:hover .front-12 {
         transform: perspective(600px) rotateY(180deg); }
       .card-12 .cardsub-12:hover .back-12 {
+        transform: perspective(600px) rotateY(360deg); }
+  .card-13 {
+    grid-area: card-13;
+    margin: 20px;
+    display: flex;
+    justify-content: center; }
+    .card-13 .cardsub-13 {
+      position: relative;
+      width: 100px;
+      height: 200px; }
+      .card-13 .cardsub-13 .face-13 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-13 .cardsub-13 .front-13 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-13 .cardsub-13 .front-13 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-13 .cardsub-13 .back-13 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-13 .cardsub-13 .back-13 h4 {
+          font-size: 10px;
+          margin-top: 5px;
+          text-align: center; }
+        .card-13 .cardsub-13 .back-13 p {
+          font-size: 7px;
+          text-align: center; }
+      .card-13 .cardsub-13:hover .front-13 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-13 .cardsub-13:hover .back-13 {
+        transform: perspective(600px) rotateY(360deg); }
+  .card-14 {
+    grid-area: card-14;
+    margin: 20px;
+    display: flex;
+    justify-content: center; }
+    .card-14 .cardsub-14 {
+      position: relative;
+      width: 100px;
+      height: 200px; }
+      .card-14 .cardsub-14 .face-14 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-14 .cardsub-14 .front-14 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-14 .cardsub-14 .front-14 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-14 .cardsub-14 .back-14 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-14 .cardsub-14 .back-14 h4 {
+          font-size: 10px;
+          margin-top: 5px;
+          text-align: center; }
+        .card-14 .cardsub-14 .back-14 p {
+          font-size: 7px;
+          text-align: center; }
+      .card-14 .cardsub-14:hover .front-14 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-14 .cardsub-14:hover .back-14 {
+        transform: perspective(600px) rotateY(360deg); }
+  .card-15 {
+    grid-area: card-15;
+    margin: 20px;
+    display: flex;
+    justify-content: center; }
+    .card-15 .cardsub-15 {
+      position: relative;
+      width: 100px;
+      height: 200px; }
+      .card-15 .cardsub-15 .face-15 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-15 .cardsub-15 .front-15 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-15 .cardsub-15 .front-15 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-15 .cardsub-15 .back-15 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-15 .cardsub-15 .back-15 h4 {
+          font-size: 10px;
+          margin-top: 5px;
+          text-align: center; }
+        .card-15 .cardsub-15 .back-15 p {
+          font-size: 7px;
+          text-align: center; }
+      .card-15 .cardsub-15:hover .front-15 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-15 .cardsub-15:hover .back-15 {
+        transform: perspective(600px) rotateY(360deg); }
+  .card-16 {
+    grid-area: card-16;
+    margin: 20px;
+    display: flex;
+    justify-content: center; }
+    .card-16 .cardsub-16 {
+      position: relative;
+      width: 100px;
+      height: 200px; }
+      .card-16 .cardsub-16 .face-16 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .card-16 .cardsub-16 .front-16 {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000000; }
+        .card-16 .cardsub-16 .front-16 img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .card-16 .cardsub-16 .back-16 {
+        transform: perspective(600px) rotateY(180deg);
+        background: #584b13;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 5px 10px #000000; }
+        .card-16 .cardsub-16 .back-16 h4 {
+          font-size: 10px;
+          margin-top: 5px;
+          text-align: center; }
+        .card-16 .cardsub-16 .back-16 p {
+          font-size: 7px;
+          text-align: center; }
+      .card-16 .cardsub-16:hover .front-16 {
+        transform: perspective(600px) rotateY(180deg); }
+      .card-16 .cardsub-16:hover .back-16 {
         transform: perspective(600px) rotateY(360deg); } }
 
 * {
