@@ -201,7 +201,7 @@ body {
       font-size: 40px;
       font-style: bold; }
     .pages-banner p {
-      margin: 5px 0px;
+      margin: 10px 10px;
       font-size: 16px;
       text-align: center; } }
 
@@ -215,7 +215,7 @@ body {
       font-size: 40px;
       font-style: bold; }
     .pages-banner p {
-      margin: 4px 0px;
+      margin: 5px 5px;
       font-size: 16px;
       text-align: center; } }
 
@@ -229,7 +229,7 @@ body {
       font-size: 20px;
       font-style: bold; }
     .pages-banner p {
-      margin: 2px 0px;
+      margin: 2px 2px;
       font-size: 7px;
       text-align: justify; } }
 
